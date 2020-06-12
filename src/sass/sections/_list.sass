@@ -1,0 +1,150 @@
+// index.sass
+.list
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+  .list-item
+    display: flex
+    flex-direction: column
+    margin-bottom: 30px
+    .img
+      +coverBg
+      &.play-icon
+        &:after
+          content: ''
+          +bg('owl.video.play.png')
+          top: 50%
+          left: 50%
+          transform: translate(-50%, -50%)
+          position: absolute
+          +dTime
+    .info
+      margin-top: 7px
+      .info-title
+        +dTime
+      .info-txt
+        color: #abb7c4
+        line-height: 1.7em
+  &.man-list
+    .list-item
+      width: 22%
+      .img
+        +dTime
+        +ratio(3,5)
+        transform: skew(-4deg)
+      .info
+        .info-title
+          .role
+            font-size: 0.7em
+            margin-left: 1em
+            font-weight: normal
+            color: #bbb
+      &:hover
+        .img
+          transform: skew(-4deg) scale(1.05)
+
+
+      &.director
+        width: 100%
+        flex-direction: row
+        .img
+          width: 50%
+          +ratio(20,9)
+          flex-shrink: 0
+        .info
+          padding-left: 50px
+          .info-title
+            font-size: 24px
+          .team
+            line-height: 1.7em
+            color: #999
+            font-size: 15px
+
+  &.film-list
+    .list-item
+      width: 48%
+      cursor: pointer
+      
+      .img
+        opacity: .8
+        +dTime
+        +ratio(16,9)
+        +dTime
+        
+      .info 
+        background-color: #071829
+        margin-top: -5px
+        padding: 15px 35px
+      &:hover
+        .img
+          opacity: 1
+          transform: scale(1.05)
+          
+        .info 
+          .info-title
+            color: #4280bf
+
+    &.film-list-2
+      .list-item  
+        width: 100%
+        flex-direction: row
+        margin-bottom: 40px
+        .img
+          width: 50%
+          .note
+            position: absolute
+            width: 100%
+            height: 100%
+            top: 0
+            left: 0
+            background-color: rgba(black,.7)
+            display: flex
+            align-items: center
+            justify-content: center
+            flex-direction: column
+            .date
+              letter-spacing: 0.3em
+              font-size: 28px
+            .note-txt
+              text-transform: uppercase
+              margin-top: 15px
+              letter-spacing: 0.15em
+
+            
+
+        .info 
+          width: 50%
+          display: flex
+          flex-direction: column
+          justify-content: center
+          padding-left: 70px
+          background-color: transparent
+          .info-title
+            font-size: 24px
+            letter-spacing: .15em
+            transform: skew(-7deg)
+          .info-txt
+            margin-top: 0
+            
+
+
+
+
+  &.pro-list
+    .list-item
+      width: 23%
+      cursor: pointe
+      +dTime
+      +phone 
+        width: 47%
+      .img
+        +ratio(40,43)
+        +dTime
+      &:hover
+        .info 
+          .info-title
+            color: #4280bf
+        .img
+          // opacity: .85
+          transform: scale(1.05)
+

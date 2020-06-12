@@ -1,0 +1,61 @@
+// index.sass
+
+
+body
+  background-color: #fff
+  color: white
+
+section
+  background-color: #06121e
+  &:nth-child(2n)
+    background-color: #020d18
+  &.hero
+    .container
+      padding: 0 25px
+  .container
+    padding: 70px 25px
+    max-width: 1140px
+    margin: 0 auto
+
+    .s-title
+      margin-bottom: 35px
+      position: relative
+      display: inline-block
+      .t1
+        font-size: 28px
+        font-weight: bold
+        letter-spacing: 0.15em
+        margin-top: 0
+      .t2
+        font-weight: bold
+        text-transform: uppercase
+        position: absolute
+        left: 40%
+        top: 25%
+        font-size: 45px
+        font-style: italic
+        opacity: .1
+        white-space: nowrap
+
+
+.info-section
+  .container
+    padding-left: 50px
+  .outline
+    font-size: 24px
+    line-height: 1.7em
+    position: relative
+    padding-left: 1.5em
+    font-weight: bold
+    &:after
+      position: absolute
+      content: ''
+      top: 0
+      left: 0
+      width: 3px
+      height: 100%
+      background-color: #4280bf
+  .cast
+    margin-top: 45px
+    line-height: 1.7em
+    color: #abb7c4
