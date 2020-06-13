@@ -151,6 +151,11 @@ $compass-imagehelper-imagesmap: (
     height: '338',
     hash: '896f3468c6ba6ada8f99dc66a998740e'
   ),
+  'kv-2.jpg': (
+    width: '1440',
+    height: '900',
+    hash: '4e6aa24937e4e88624fa324f25f248dc'
+  ),
   'kv-BAK.jpg': (
     width: '1140',
     height: '713',
@@ -159,7 +164,7 @@ $compass-imagehelper-imagesmap: (
   'kv.jpg': (
     width: '1440',
     height: '900',
-    hash: '4e6aa24937e4e88624fa324f25f248dc'
+    hash: '284d81385652cf9aa648b7e68c3e1870'
   ),
   'm-1.jpg': (
     width: '300',
@@ -191,60 +196,80 @@ $compass-imagehelper-imagesmap: (
     height: '80',
     hash: '4a37f8008959c75f619bf0a3a4e2d7a2'
   ),
+  'play-solid.png': (
+    width: '80',
+    height: '91',
+    hash: '57be43885d2493c23275e39af9b2472b'
+  ),
   'pro-1.jpg': (
-    width: '400',
-    height: '430',
-    hash: '6e8945dcc39a76b04e416abee32e30b3'
+    width: '300',
+    height: '323',
+    hash: '78d85446b21b075c753d6c52011fbd51'
   ),
-  '正片/第一集.jpg': (
-    width: '6000',
-    height: '3376',
-    hash: '528e2ca7b1f1a5c0902c2ca8ee7598a3'
+  'pro-10.jpg': (
+    width: '300',
+    height: '323',
+    hash: '25c5dd59d19563e30998076255f6a443'
   ),
-  '正片/第三集.jpg': (
-    width: '4848',
-    height: '2728',
-    hash: '4e5b52fa93c844f4572472743a7ffec7'
+  'pro-2.jpg': (
+    width: '300',
+    height: '323',
+    hash: 'fc1eb33be21f451c37cc876365d2fe87'
   ),
-  '正片/第二集.jpg': (
-    width: '6000',
-    height: '3376',
-    hash: '8c72737077c5f9c3538c5dc9b52b1441'
+  'pro-3.jpg': (
+    width: '300',
+    height: '323',
+    hash: '844a208397a4fd7713ee5ed40a270168'
   ),
-  '正片/第五集.jpg': (
-    width: '5376',
-    height: '3307',
-    hash: '97982a5d4292b05d2ea6cf4078c675f6'
+  'pro-4.jpg': (
+    width: '300',
+    height: '323',
+    hash: '1c2308dedcff75dbb800b562096e99eb'
   ),
-  '正片/第四集.jpg': (
-    width: '6000',
-    height: '3376',
-    hash: '7dcd564ab104f40463095f4aa995bf07'
+  'pro-5.jpg': (
+    width: '300',
+    height: '323',
+    hash: '6f8c02fd512a3cbdbc70d4b3438c93c9'
   ),
-  '人物介紹/Gaby.jpg': (
-    width: '5609',
-    height: '3286',
-    hash: 'f4e3142a1b0f4e306cc50042df67ca9b'
+  'pro-6.jpg': (
+    width: '300',
+    height: '323',
+    hash: '32c32941982ac61be36dbc2f78760590'
   ),
-  '人物介紹/吳宜樺.jpg': (
-    width: '6000',
-    height: '3376',
-    hash: 'ae2bc60fd84f9e5306283462d8eae078'
+  'pro-7.jpg': (
+    width: '300',
+    height: '323',
+    hash: 'd455fc8c6dde21c49b8b3e12869dfdca'
   ),
-  '人物介紹/導演.jpg': (
-    width: '6000',
-    height: '3376',
-    hash: '2efa26b97aeee51c130d3fe936ade3ab'
+  'pro-8.jpg': (
+    width: '300',
+    height: '323',
+    hash: '9430934dc2ef5a5a30a8dc5940fa4607'
   ),
-  '人物介紹/小傑.jpg': (
-    width: '5525',
-    height: '3109',
-    hash: '06d0767b69742d84281966f7382fea29'
+  'pro-9.jpg': (
+    width: '300',
+    height: '323',
+    hash: '34f7fe992d2d7d97cf931c38fd485c97'
   ),
-  '人物介紹/張鈞甯.jpg': (
-    width: '5865',
-    height: '3300',
-    hash: '6d59de426d576aa5b4dd7ebf9754a514'
+  't-1.jpg': (
+    width: '500',
+    height: '296',
+    hash: 'a6574e8f804447160343599d72182ea4'
+  ),
+  't-2.jpg': (
+    width: '500',
+    height: '281',
+    hash: '278a2adce4288e4f6b52deefbbb897d7'
+  ),
+  't-3.jpg': (
+    width: '500',
+    height: '281',
+    hash: 'e17396dbf19eecff2a413df6a8be157d'
+  ),
+  't-4.jpg': (
+    width: '500',
+    height: '281',
+    hash: '1ab76d30b7c6a6e8e94d462f78999b55'
   ),
 );
 
@@ -328,6 +353,22 @@ $compass-imagehelper-imagesmap: (
   background-image: image-url('f-5.jpg');
 }
 
+%kv-2-jpg {
+  // Available properties:
+  // prefix: ;
+  // width: 1440;
+  // height: 900;
+  // filename: kv-2.jpg;
+  // basename: kv-2;
+  // dirname: images;
+  // ext: .jpg;
+  // path: kv-2.jpg;
+  // fullname: kv-2-jpg;
+  // mime: image/jpeg;
+  // hash: 4e6aa24937e4e88624fa324f25f248dc;
+  background-image: image-url('kv-2.jpg');
+}
+
 %kv-BAK-jpg {
   // Available properties:
   // prefix: ;
@@ -356,7 +397,7 @@ $compass-imagehelper-imagesmap: (
   // path: kv.jpg;
   // fullname: kv-jpg;
   // mime: image/jpeg;
-  // hash: 4e6aa24937e4e88624fa324f25f248dc;
+  // hash: 284d81385652cf9aa648b7e68c3e1870;
   background-image: image-url('kv.jpg');
 }
 
@@ -456,11 +497,27 @@ $compass-imagehelper-imagesmap: (
   background-image: image-url('owl.video.play.png');
 }
 
+%play-solid-png {
+  // Available properties:
+  // prefix: ;
+  // width: 80;
+  // height: 91;
+  // filename: play-solid.png;
+  // basename: play-solid;
+  // dirname: images;
+  // ext: .png;
+  // path: play-solid.png;
+  // fullname: play-solid-png;
+  // mime: image/png;
+  // hash: 57be43885d2493c23275e39af9b2472b;
+  background-image: image-url('play-solid.png');
+}
+
 %pro-1-jpg {
   // Available properties:
   // prefix: ;
-  // width: 400;
-  // height: 430;
+  // width: 300;
+  // height: 323;
   // filename: pro-1.jpg;
   // basename: pro-1;
   // dirname: images;
@@ -468,167 +525,215 @@ $compass-imagehelper-imagesmap: (
   // path: pro-1.jpg;
   // fullname: pro-1-jpg;
   // mime: image/jpeg;
-  // hash: 6e8945dcc39a76b04e416abee32e30b3;
+  // hash: 78d85446b21b075c753d6c52011fbd51;
   background-image: image-url('pro-1.jpg');
 }
 
-%正片-第一集-jpg {
+%pro-10-jpg {
   // Available properties:
   // prefix: ;
-  // width: 6000;
-  // height: 3376;
-  // filename: 第一集.jpg;
-  // basename: 第一集;
-  // dirname: 正片;
+  // width: 300;
+  // height: 323;
+  // filename: pro-10.jpg;
+  // basename: pro-10;
+  // dirname: images;
   // ext: .jpg;
-  // path: 正片/第一集.jpg;
-  // fullname: 正片-第一集-jpg;
+  // path: pro-10.jpg;
+  // fullname: pro-10-jpg;
   // mime: image/jpeg;
-  // hash: 528e2ca7b1f1a5c0902c2ca8ee7598a3;
-  background-image: image-url('正片/第一集.jpg');
+  // hash: 25c5dd59d19563e30998076255f6a443;
+  background-image: image-url('pro-10.jpg');
 }
 
-%正片-第三集-jpg {
+%pro-2-jpg {
   // Available properties:
   // prefix: ;
-  // width: 4848;
-  // height: 2728;
-  // filename: 第三集.jpg;
-  // basename: 第三集;
-  // dirname: 正片;
+  // width: 300;
+  // height: 323;
+  // filename: pro-2.jpg;
+  // basename: pro-2;
+  // dirname: images;
   // ext: .jpg;
-  // path: 正片/第三集.jpg;
-  // fullname: 正片-第三集-jpg;
+  // path: pro-2.jpg;
+  // fullname: pro-2-jpg;
   // mime: image/jpeg;
-  // hash: 4e5b52fa93c844f4572472743a7ffec7;
-  background-image: image-url('正片/第三集.jpg');
+  // hash: fc1eb33be21f451c37cc876365d2fe87;
+  background-image: image-url('pro-2.jpg');
 }
 
-%正片-第二集-jpg {
+%pro-3-jpg {
   // Available properties:
   // prefix: ;
-  // width: 6000;
-  // height: 3376;
-  // filename: 第二集.jpg;
-  // basename: 第二集;
-  // dirname: 正片;
+  // width: 300;
+  // height: 323;
+  // filename: pro-3.jpg;
+  // basename: pro-3;
+  // dirname: images;
   // ext: .jpg;
-  // path: 正片/第二集.jpg;
-  // fullname: 正片-第二集-jpg;
+  // path: pro-3.jpg;
+  // fullname: pro-3-jpg;
   // mime: image/jpeg;
-  // hash: 8c72737077c5f9c3538c5dc9b52b1441;
-  background-image: image-url('正片/第二集.jpg');
+  // hash: 844a208397a4fd7713ee5ed40a270168;
+  background-image: image-url('pro-3.jpg');
 }
 
-%正片-第五集-jpg {
+%pro-4-jpg {
   // Available properties:
   // prefix: ;
-  // width: 5376;
-  // height: 3307;
-  // filename: 第五集.jpg;
-  // basename: 第五集;
-  // dirname: 正片;
+  // width: 300;
+  // height: 323;
+  // filename: pro-4.jpg;
+  // basename: pro-4;
+  // dirname: images;
   // ext: .jpg;
-  // path: 正片/第五集.jpg;
-  // fullname: 正片-第五集-jpg;
+  // path: pro-4.jpg;
+  // fullname: pro-4-jpg;
   // mime: image/jpeg;
-  // hash: 97982a5d4292b05d2ea6cf4078c675f6;
-  background-image: image-url('正片/第五集.jpg');
+  // hash: 1c2308dedcff75dbb800b562096e99eb;
+  background-image: image-url('pro-4.jpg');
 }
 
-%正片-第四集-jpg {
+%pro-5-jpg {
   // Available properties:
   // prefix: ;
-  // width: 6000;
-  // height: 3376;
-  // filename: 第四集.jpg;
-  // basename: 第四集;
-  // dirname: 正片;
+  // width: 300;
+  // height: 323;
+  // filename: pro-5.jpg;
+  // basename: pro-5;
+  // dirname: images;
   // ext: .jpg;
-  // path: 正片/第四集.jpg;
-  // fullname: 正片-第四集-jpg;
+  // path: pro-5.jpg;
+  // fullname: pro-5-jpg;
   // mime: image/jpeg;
-  // hash: 7dcd564ab104f40463095f4aa995bf07;
-  background-image: image-url('正片/第四集.jpg');
+  // hash: 6f8c02fd512a3cbdbc70d4b3438c93c9;
+  background-image: image-url('pro-5.jpg');
 }
 
-%人物介紹-Gaby-jpg {
+%pro-6-jpg {
   // Available properties:
   // prefix: ;
-  // width: 5609;
-  // height: 3286;
-  // filename: Gaby.jpg;
-  // basename: Gaby;
-  // dirname: 人物介紹;
+  // width: 300;
+  // height: 323;
+  // filename: pro-6.jpg;
+  // basename: pro-6;
+  // dirname: images;
   // ext: .jpg;
-  // path: 人物介紹/Gaby.jpg;
-  // fullname: 人物介紹-Gaby-jpg;
+  // path: pro-6.jpg;
+  // fullname: pro-6-jpg;
   // mime: image/jpeg;
-  // hash: f4e3142a1b0f4e306cc50042df67ca9b;
-  background-image: image-url('人物介紹/Gaby.jpg');
+  // hash: 32c32941982ac61be36dbc2f78760590;
+  background-image: image-url('pro-6.jpg');
 }
 
-%人物介紹-吳宜樺-jpg {
+%pro-7-jpg {
   // Available properties:
   // prefix: ;
-  // width: 6000;
-  // height: 3376;
-  // filename: 吳宜樺.jpg;
-  // basename: 吳宜樺;
-  // dirname: 人物介紹;
+  // width: 300;
+  // height: 323;
+  // filename: pro-7.jpg;
+  // basename: pro-7;
+  // dirname: images;
   // ext: .jpg;
-  // path: 人物介紹/吳宜樺.jpg;
-  // fullname: 人物介紹-吳宜樺-jpg;
+  // path: pro-7.jpg;
+  // fullname: pro-7-jpg;
   // mime: image/jpeg;
-  // hash: ae2bc60fd84f9e5306283462d8eae078;
-  background-image: image-url('人物介紹/吳宜樺.jpg');
+  // hash: d455fc8c6dde21c49b8b3e12869dfdca;
+  background-image: image-url('pro-7.jpg');
 }
 
-%人物介紹-導演-jpg {
+%pro-8-jpg {
   // Available properties:
   // prefix: ;
-  // width: 6000;
-  // height: 3376;
-  // filename: 導演.jpg;
-  // basename: 導演;
-  // dirname: 人物介紹;
+  // width: 300;
+  // height: 323;
+  // filename: pro-8.jpg;
+  // basename: pro-8;
+  // dirname: images;
   // ext: .jpg;
-  // path: 人物介紹/導演.jpg;
-  // fullname: 人物介紹-導演-jpg;
+  // path: pro-8.jpg;
+  // fullname: pro-8-jpg;
   // mime: image/jpeg;
-  // hash: 2efa26b97aeee51c130d3fe936ade3ab;
-  background-image: image-url('人物介紹/導演.jpg');
+  // hash: 9430934dc2ef5a5a30a8dc5940fa4607;
+  background-image: image-url('pro-8.jpg');
 }
 
-%人物介紹-小傑-jpg {
+%pro-9-jpg {
   // Available properties:
   // prefix: ;
-  // width: 5525;
-  // height: 3109;
-  // filename: 小傑.jpg;
-  // basename: 小傑;
-  // dirname: 人物介紹;
+  // width: 300;
+  // height: 323;
+  // filename: pro-9.jpg;
+  // basename: pro-9;
+  // dirname: images;
   // ext: .jpg;
-  // path: 人物介紹/小傑.jpg;
-  // fullname: 人物介紹-小傑-jpg;
+  // path: pro-9.jpg;
+  // fullname: pro-9-jpg;
   // mime: image/jpeg;
-  // hash: 06d0767b69742d84281966f7382fea29;
-  background-image: image-url('人物介紹/小傑.jpg');
+  // hash: 34f7fe992d2d7d97cf931c38fd485c97;
+  background-image: image-url('pro-9.jpg');
 }
 
-%人物介紹-張鈞甯-jpg {
+%t-1-jpg {
   // Available properties:
   // prefix: ;
-  // width: 5865;
-  // height: 3300;
-  // filename: 張鈞甯.jpg;
-  // basename: 張鈞甯;
-  // dirname: 人物介紹;
+  // width: 500;
+  // height: 296;
+  // filename: t-1.jpg;
+  // basename: t-1;
+  // dirname: images;
   // ext: .jpg;
-  // path: 人物介紹/張鈞甯.jpg;
-  // fullname: 人物介紹-張鈞甯-jpg;
+  // path: t-1.jpg;
+  // fullname: t-1-jpg;
   // mime: image/jpeg;
-  // hash: 6d59de426d576aa5b4dd7ebf9754a514;
-  background-image: image-url('人物介紹/張鈞甯.jpg');
+  // hash: a6574e8f804447160343599d72182ea4;
+  background-image: image-url('t-1.jpg');
+}
+
+%t-2-jpg {
+  // Available properties:
+  // prefix: ;
+  // width: 500;
+  // height: 281;
+  // filename: t-2.jpg;
+  // basename: t-2;
+  // dirname: images;
+  // ext: .jpg;
+  // path: t-2.jpg;
+  // fullname: t-2-jpg;
+  // mime: image/jpeg;
+  // hash: 278a2adce4288e4f6b52deefbbb897d7;
+  background-image: image-url('t-2.jpg');
+}
+
+%t-3-jpg {
+  // Available properties:
+  // prefix: ;
+  // width: 500;
+  // height: 281;
+  // filename: t-3.jpg;
+  // basename: t-3;
+  // dirname: images;
+  // ext: .jpg;
+  // path: t-3.jpg;
+  // fullname: t-3-jpg;
+  // mime: image/jpeg;
+  // hash: e17396dbf19eecff2a413df6a8be157d;
+  background-image: image-url('t-3.jpg');
+}
+
+%t-4-jpg {
+  // Available properties:
+  // prefix: ;
+  // width: 500;
+  // height: 281;
+  // filename: t-4.jpg;
+  // basename: t-4;
+  // dirname: images;
+  // ext: .jpg;
+  // path: t-4.jpg;
+  // fullname: t-4-jpg;
+  // mime: image/jpeg;
+  // hash: 1ab76d30b7c6a6e8e94d462f78999b55;
+  background-image: image-url('t-4.jpg');
 }
 

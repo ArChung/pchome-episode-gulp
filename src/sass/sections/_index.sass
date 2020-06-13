@@ -10,8 +10,24 @@ section
   &:nth-child(2n)
     background-color: #020d18
   &.hero
+    position: relative
+    overflow: hidden
+    .bg
+      position: absolute
+      top: 0
+      width: 100%
+      height: 100%
+      left: 0
+      +coverBg('kv.jpg')
+      z-index: 0
+      filter: blur(10px)
+      transform: scale(1.05)
+      opacity: .3
+      
     .container
       padding: 0 25px
+      position: relative
+      z-index: 2
   .container
     padding: 70px 25px
     max-width: 1140px
@@ -21,6 +37,15 @@ section
       margin-bottom: 35px
       position: relative
       display: inline-block
+      &:after
+        width: 110%
+        height: 3px
+        background-color: #b01414
+        position: absolute
+        content: ''
+        bottom: 12px
+        left: 0
+
       .t1
         font-size: 28px
         font-weight: bold
@@ -59,3 +84,45 @@ section
     margin-top: 45px
     line-height: 1.7em
     color: #abb7c4
+
+.i-play
+  +coverBg('play-solid.png')
+  display: inline-block
+  width: 18px
+  margin-right: .7em
+  vertical-align: text-top
+  margin-top: 5px
+  +ratio(80,91)
+
+  
+#pop
+  position: fixed
+  width: 100%
+  height: 100%
+  top: 0
+  left: 0
+  z-index: 100
+  display: flex
+  justify-content: center
+  align-items: center
+  padding: 25px
+  .bg
+    position: absolute
+    width: 100%
+    height: 100%
+    top: 0
+    left: 0
+    background-color: rgba(black,.7)
+
+  .videoWrap
+    +ratio(16,9)
+    width: 100%
+    max-width: 900px
+    background-color: #000
+    > *
+      position: absolute
+      width: 100%
+      height: 100%
+      top: 0
+      left: 0
+      
