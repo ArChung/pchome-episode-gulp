@@ -164,17 +164,17 @@ $compass-imagehelper-imagesmap: (
   'kv.jpg': (
     width: '1440',
     height: '900',
-    hash: '284d81385652cf9aa648b7e68c3e1870'
+    hash: '29b823c72ab4120915901f2affd7a069'
   ),
   'm-1.jpg': (
     width: '300',
     height: '495',
-    hash: '31eb513282ad6d56188e696ad5dde64c'
+    hash: '4c0c2ad45ff067f5ad687c86af9de28a'
   ),
   'm-2.jpg': (
     width: '300',
     height: '495',
-    hash: '50105f9882c6b7bb1d8a877a02c74123'
+    hash: 'beb60435b6f771a0f7f5fac7bceb4e03'
   ),
   'm-3.jpg': (
     width: '300',
@@ -184,7 +184,7 @@ $compass-imagehelper-imagesmap: (
   'm-4.jpg': (
     width: '300',
     height: '495',
-    hash: '312e0ea689604ec24e915fc178e045fe'
+    hash: 'c4b813f2503b91233ac166be927d00f0'
   ),
   'm-5.jpg': (
     width: '1040',
@@ -195,6 +195,11 @@ $compass-imagehelper-imagesmap: (
     width: '80',
     height: '80',
     hash: '4a37f8008959c75f619bf0a3a4e2d7a2'
+  ),
+  'pchome24.png': (
+    width: '500',
+    height: '67',
+    hash: 'b9b905c2f3f386e22fab255bcf535170'
   ),
   'play-solid.png': (
     width: '80',
@@ -397,7 +402,7 @@ $compass-imagehelper-imagesmap: (
   // path: kv.jpg;
   // fullname: kv-jpg;
   // mime: image/jpeg;
-  // hash: 284d81385652cf9aa648b7e68c3e1870;
+  // hash: 29b823c72ab4120915901f2affd7a069;
   background-image: image-url('kv.jpg');
 }
 
@@ -413,7 +418,7 @@ $compass-imagehelper-imagesmap: (
   // path: m-1.jpg;
   // fullname: m-1-jpg;
   // mime: image/jpeg;
-  // hash: 31eb513282ad6d56188e696ad5dde64c;
+  // hash: 4c0c2ad45ff067f5ad687c86af9de28a;
   background-image: image-url('m-1.jpg');
 }
 
@@ -429,7 +434,7 @@ $compass-imagehelper-imagesmap: (
   // path: m-2.jpg;
   // fullname: m-2-jpg;
   // mime: image/jpeg;
-  // hash: 50105f9882c6b7bb1d8a877a02c74123;
+  // hash: beb60435b6f771a0f7f5fac7bceb4e03;
   background-image: image-url('m-2.jpg');
 }
 
@@ -461,7 +466,7 @@ $compass-imagehelper-imagesmap: (
   // path: m-4.jpg;
   // fullname: m-4-jpg;
   // mime: image/jpeg;
-  // hash: 312e0ea689604ec24e915fc178e045fe;
+  // hash: c4b813f2503b91233ac166be927d00f0;
   background-image: image-url('m-4.jpg');
 }
 
@@ -495,6 +500,22 @@ $compass-imagehelper-imagesmap: (
   // mime: image/png;
   // hash: 4a37f8008959c75f619bf0a3a4e2d7a2;
   background-image: image-url('owl.video.play.png');
+}
+
+%pchome24-png {
+  // Available properties:
+  // prefix: ;
+  // width: 500;
+  // height: 67;
+  // filename: pchome24.png;
+  // basename: pchome24;
+  // dirname: images;
+  // ext: .png;
+  // path: pchome24.png;
+  // fullname: pchome24-png;
+  // mime: image/png;
+  // hash: b9b905c2f3f386e22fab255bcf535170;
+  background-image: image-url('pchome24.png');
 }
 
 %play-solid-png {

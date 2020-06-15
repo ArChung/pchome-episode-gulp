@@ -534,6 +534,33 @@ a {
         left: 0;
         right: 0;
         bottom: 0; }
+      .list.film-list .list-item .img .note {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.7);
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column; }
+        .list.film-list .list-item .img .note .date {
+          letter-spacing: 0.3em;
+          font-size: 28px; }
+        .list.film-list .list-item .img .note .note-txt {
+          text-transform: uppercase;
+          margin-top: 15px;
+          letter-spacing: 0.15em; }
     .list.film-list .list-item .info {
       background-color: #071829;
       margin-top: -5px;
@@ -560,33 +587,6 @@ a {
                 flex-direction: column; } }
     .list.film-list.film-list-2 .list-item .img {
       width: 50%; }
-      .list.film-list.film-list-2 .list-item .img .note {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        background-color: rgba(0, 0, 0, 0.7);
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column; }
-        .list.film-list.film-list-2 .list-item .img .note .date {
-          letter-spacing: 0.3em;
-          font-size: 28px; }
-        .list.film-list.film-list-2 .list-item .img .note .note-txt {
-          text-transform: uppercase;
-          margin-top: 15px;
-          letter-spacing: 0.15em; }
       @media screen and (max-width: 768px) {
         .list.film-list.film-list-2 .list-item .img {
           width: 100%; } }
@@ -739,6 +739,17 @@ section {
   margin-top: 45px;
   line-height: 1.7em;
   color: #abb7c4; }
+
+.info-section .producer {
+  margin-top: 65px;
+  font-weight: bold;
+  font-size: 20px; }
+  .info-section .producer img {
+    display: inline-block;
+    width: 250px;
+    margin-left: 15px;
+    vertical-align: text-top;
+    margin-top: -12px; }
 
 .i-play {
   background-size: cover;

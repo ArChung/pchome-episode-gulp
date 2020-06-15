@@ -14,8 +14,11 @@ function initVideoBtn() {
   $('.vBtn').click(function () {
     const t = $(this);
     const vid = t.attr('data-vid');
-    ChungTool.addYouTube(vPop.find('.videoWrap'), vid);
-    vPop.removeClass('hide');
+
+    if (vid) {
+      ChungTool.addYouTube(vPop.find('.videoWrap'), vid);
+      vPop.removeClass('hide');
+    }
   });
 
 
