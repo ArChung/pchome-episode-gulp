@@ -28,6 +28,8 @@
   &.man-list
     .list-item
       width: 22%
+      +phone
+        width: 47%
       .img
         +dTime
         +ratio(3,5)
@@ -47,12 +49,18 @@
       &.director
         width: 100%
         flex-direction: row
+        +phone
+          flex-direction: column
         .img
           width: 50%
           +ratio(20,9)
           flex-shrink: 0
+          +phone
+            width: 100%
         .info
           padding-left: 50px
+          +phone 
+            padding-left: 15px
           .info-title
             font-size: 24px
           .team
@@ -64,7 +72,12 @@
     .list-item
       width: 48%
       cursor: pointer
-      
+      +phone
+        width: 100%
+        flex-direction: row
+        .img
+          width: 35%
+          flex-shrink: 0
       .img
         opacity: .8
         +dTime
@@ -89,6 +102,9 @@
         width: 100%
         flex-direction: row
         margin-bottom: 40px
+        +phone
+          flex-direction: column
+          
         .img
           width: 50%
           .note
@@ -110,6 +126,9 @@
               margin-top: 15px
               letter-spacing: 0.15em
 
+          +phone 
+            width: 100%
+
             
 
         .info 
@@ -119,6 +138,12 @@
           justify-content: center
           padding-left: 70px
           background-color: transparent
+          +phone 
+            width: 100%
+            padding-left: 25px
+            background-color: #071829
+
+
           .info-title
             font-size: 24px
             letter-spacing: .15em
