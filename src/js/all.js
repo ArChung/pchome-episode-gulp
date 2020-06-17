@@ -5,6 +5,7 @@ inView.offset(130);
 $(document).ready(() => {
   initVideoBtn();
   init_simple_ani();
+  init_sideBar();
 });
 
 
@@ -48,3 +49,32 @@ function init_simple_ani() {
 //       $(el).removeClass('show');
 //     })
 // }
+
+function init_sideBar() {
+  $(document).click(function (event) {
+    if (!$(event.target).closest("#menu-check").length) {
+      console.log('test');
+      $('#menu-check').prop("checked", false);
+    }
+  });
+
+
+  $('#menu a').click(function (e) {
+    e.preventDefault();
+    const t = $(this);
+    const id = t.attr('data-section');
+    ChungTool.pageScrollAni($(`#section-${id}`).offset().top)
+  });
+
+
+  // init position
+  const _t = $('#section-index').offset().top;
+  $('#menuToggle').css({
+    'top': `${_t + 40}px`
+  });
+
+  $('#menu').css({
+    'margin-top': `${-_t - 67}px`
+  });
+
+}
