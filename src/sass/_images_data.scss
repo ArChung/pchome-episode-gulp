@@ -123,9 +123,19 @@
   @return if($minus, $result * -1, $result);
 }
 
-$compass-imagehelper-path-prefix: '../images/';
+$compass-imagehelper-path-prefix: '../img/';
 
 $compass-imagehelper-imagesmap: (
+  '24HLOGO.png': (
+    width: '960',
+    height: '127',
+    hash: 'c8204ba06676c0c1e7efd70c5bfe6cc0'
+  ),
+  'demo.jpg': (
+    width: '250',
+    height: '250',
+    hash: '109c699dece972eab4dc9f8ff61b3834'
+  ),
   'f-1.jpg': (
     width: '600',
     height: '338',
@@ -151,6 +161,31 @@ $compass-imagehelper-imagesmap: (
     height: '338',
     hash: '93bf8c4cac86f8bac7358c3e8d84ac16'
   ),
+  'fb.svg': (
+    width: '60',
+    height: '60',
+    hash: '231018e488184fba3f26b76b29195a49'
+  ),
+  'fb_new.svg': (
+    width: '91',
+    height: '91',
+    hash: '68f7335d56cf92d593f8ba691c5baf9a'
+  ),
+  'header_01.png': (
+    width: '464',
+    height: '80',
+    hash: 'ada4b8b5d7aa59b9ea67abe936376478'
+  ),
+  'header_02.png': (
+    width: '958',
+    height: '80',
+    hash: '35b431dfeeff52f2f8db6247d18d1029'
+  ),
+  'ig_new.svg': (
+    width: '91',
+    height: '91',
+    hash: 'fd5cbd9609c91e7adcadfc2dfdd51b57'
+  ),
   'kv-2.jpg': (
     width: '1440',
     height: '900',
@@ -164,7 +199,17 @@ $compass-imagehelper-imagesmap: (
   'kv.jpg': (
     width: '1440',
     height: '900',
-    hash: '3d7bdae426301ade1110f3cce81f0d82'
+    hash: '95adedb911140223df389dcda326ed6a'
+  ),
+  'line.svg': (
+    width: '57',
+    height: '54',
+    hash: '5966278398dbe538752a2d703c6f9159'
+  ),
+  'line_new.svg': (
+    width: '91',
+    height: '91',
+    hash: '33040f7614e5a117c7b3e1bfbd52be00'
   ),
   'm-1.jpg': (
     width: '300',
@@ -179,7 +224,7 @@ $compass-imagehelper-imagesmap: (
   'm-3.jpg': (
     width: '300',
     height: '495',
-    hash: 'dc11f26c43d51fda283f2e8dbdb28ac2'
+    hash: 'eaf1f97de08b025f5b79891161a2773a'
   ),
   'm-4.jpg': (
     width: '300',
@@ -190,6 +235,11 @@ $compass-imagehelper-imagesmap: (
     width: '1040',
     height: '497',
     hash: '7078a4850f8045fcf9ae56605a5dde48'
+  ),
+  'media_share.png': (
+    width: '512',
+    height: '512',
+    hash: '8093585f42bfe3599b2a22071beb57a2'
   ),
   'owl.video.play.png': (
     width: '80',
@@ -256,6 +306,26 @@ $compass-imagehelper-imagesmap: (
     height: '323',
     hash: '574a67159fd299cda71474f5f5a30285'
   ),
+  'QRCode.png': (
+    width: '1110',
+    height: '1110',
+    hash: '109566848a4d0675d8460a4b5c696f96'
+  ),
+  'search.svg': (
+    width: '410',
+    height: '410',
+    hash: '2e3273c8db0521751ccc3c67439f666e'
+  ),
+  'sidebar_icon1.png': (
+    width: '68',
+    height: '68',
+    hash: '41ef4ddfcce16d4f8bb7f1f57fcfde78'
+  ),
+  'sidebar_icon2.png': (
+    width: '68',
+    height: '68',
+    hash: '3a3997389c01fcd7755d18c65b548d53'
+  ),
   't-1.jpg': (
     width: '500',
     height: '296',
@@ -276,7 +346,44 @@ $compass-imagehelper-imagesmap: (
     height: '281',
     hash: '1ab76d30b7c6a6e8e94d462f78999b55'
   ),
+  'item/V11_ab_dok-DG_0823.jpg': (
+    width: '640',
+    height: '640',
+    hash: 'e66f4608c5a306234a44e74c0913739c'
+  ),
 );
+
+%24HLOGO-png {
+  // Available properties:
+  // prefix: ;
+  // width: 960;
+  // height: 127;
+  // filename: 24HLOGO.png;
+  // basename: 24HLOGO;
+  // dirname: img;
+  // ext: .png;
+  // path: 24HLOGO.png;
+  // fullname: 24HLOGO-png;
+  // mime: image/png;
+  // hash: c8204ba06676c0c1e7efd70c5bfe6cc0;
+  background-image: image-url('24HLOGO.png');
+}
+
+%demo-jpg {
+  // Available properties:
+  // prefix: ;
+  // width: 250;
+  // height: 250;
+  // filename: demo.jpg;
+  // basename: demo;
+  // dirname: img;
+  // ext: .jpg;
+  // path: demo.jpg;
+  // fullname: demo-jpg;
+  // mime: image/jpeg;
+  // hash: 109c699dece972eab4dc9f8ff61b3834;
+  background-image: image-url('demo.jpg');
+}
 
 %f-1-jpg {
   // Available properties:
@@ -285,7 +392,7 @@ $compass-imagehelper-imagesmap: (
   // height: 338;
   // filename: f-1.jpg;
   // basename: f-1;
-  // dirname: images;
+  // dirname: img;
   // ext: .jpg;
   // path: f-1.jpg;
   // fullname: f-1-jpg;
@@ -301,7 +408,7 @@ $compass-imagehelper-imagesmap: (
   // height: 338;
   // filename: f-2.jpg;
   // basename: f-2;
-  // dirname: images;
+  // dirname: img;
   // ext: .jpg;
   // path: f-2.jpg;
   // fullname: f-2-jpg;
@@ -317,7 +424,7 @@ $compass-imagehelper-imagesmap: (
   // height: 338;
   // filename: f-3.jpg;
   // basename: f-3;
-  // dirname: images;
+  // dirname: img;
   // ext: .jpg;
   // path: f-3.jpg;
   // fullname: f-3-jpg;
@@ -333,7 +440,7 @@ $compass-imagehelper-imagesmap: (
   // height: 338;
   // filename: f-4.jpg;
   // basename: f-4;
-  // dirname: images;
+  // dirname: img;
   // ext: .jpg;
   // path: f-4.jpg;
   // fullname: f-4-jpg;
@@ -349,13 +456,93 @@ $compass-imagehelper-imagesmap: (
   // height: 338;
   // filename: f-5.jpg;
   // basename: f-5;
-  // dirname: images;
+  // dirname: img;
   // ext: .jpg;
   // path: f-5.jpg;
   // fullname: f-5-jpg;
   // mime: image/jpeg;
   // hash: 93bf8c4cac86f8bac7358c3e8d84ac16;
   background-image: image-url('f-5.jpg');
+}
+
+%fb-svg {
+  // Available properties:
+  // prefix: ;
+  // width: 60;
+  // height: 60;
+  // filename: fb.svg;
+  // basename: fb;
+  // dirname: img;
+  // ext: .svg;
+  // path: fb.svg;
+  // fullname: fb-svg;
+  // mime: image/svg+xml;
+  // hash: 231018e488184fba3f26b76b29195a49;
+  background-image: image-url('fb.svg');
+}
+
+%fb_new-svg {
+  // Available properties:
+  // prefix: ;
+  // width: 91;
+  // height: 91;
+  // filename: fb_new.svg;
+  // basename: fb_new;
+  // dirname: img;
+  // ext: .svg;
+  // path: fb_new.svg;
+  // fullname: fb_new-svg;
+  // mime: image/svg+xml;
+  // hash: 68f7335d56cf92d593f8ba691c5baf9a;
+  background-image: image-url('fb_new.svg');
+}
+
+%header_01-png {
+  // Available properties:
+  // prefix: ;
+  // width: 464;
+  // height: 80;
+  // filename: header_01.png;
+  // basename: header_01;
+  // dirname: img;
+  // ext: .png;
+  // path: header_01.png;
+  // fullname: header_01-png;
+  // mime: image/png;
+  // hash: ada4b8b5d7aa59b9ea67abe936376478;
+  background-image: image-url('header_01.png');
+}
+
+%header_02-png {
+  // Available properties:
+  // prefix: ;
+  // width: 958;
+  // height: 80;
+  // filename: header_02.png;
+  // basename: header_02;
+  // dirname: img;
+  // ext: .png;
+  // path: header_02.png;
+  // fullname: header_02-png;
+  // mime: image/png;
+  // hash: 35b431dfeeff52f2f8db6247d18d1029;
+  background-image: image-url('header_02.png');
+}
+
+%ig_new-svg {
+  // Available properties:
+  // prefix: ;
+  // width: 91;
+  // height: 91;
+  // filename: ig_new.svg;
+  // basename: ig_new;
+  // dirname: img;
+  // ext: .svg;
+  // path: ig_new.svg;
+  // fullname: ig_new-svg;
+  // mime: image/svg+xml;
+  // hash: fd5cbd9609c91e7adcadfc2dfdd51b57;
+  background-image: image-url('ig_new.svg');
 }
 
 %kv-2-jpg {
@@ -365,7 +552,7 @@ $compass-imagehelper-imagesmap: (
   // height: 900;
   // filename: kv-2.jpg;
   // basename: kv-2;
-  // dirname: images;
+  // dirname: img;
   // ext: .jpg;
   // path: kv-2.jpg;
   // fullname: kv-2-jpg;
@@ -381,7 +568,7 @@ $compass-imagehelper-imagesmap: (
   // height: 713;
   // filename: kv-BAK.jpg;
   // basename: kv-BAK;
-  // dirname: images;
+  // dirname: img;
   // ext: .jpg;
   // path: kv-BAK.jpg;
   // fullname: kv-BAK-jpg;
@@ -397,13 +584,45 @@ $compass-imagehelper-imagesmap: (
   // height: 900;
   // filename: kv.jpg;
   // basename: kv;
-  // dirname: images;
+  // dirname: img;
   // ext: .jpg;
   // path: kv.jpg;
   // fullname: kv-jpg;
   // mime: image/jpeg;
-  // hash: 3d7bdae426301ade1110f3cce81f0d82;
+  // hash: 95adedb911140223df389dcda326ed6a;
   background-image: image-url('kv.jpg');
+}
+
+%line-svg {
+  // Available properties:
+  // prefix: ;
+  // width: 57;
+  // height: 54;
+  // filename: line.svg;
+  // basename: line;
+  // dirname: img;
+  // ext: .svg;
+  // path: line.svg;
+  // fullname: line-svg;
+  // mime: image/svg+xml;
+  // hash: 5966278398dbe538752a2d703c6f9159;
+  background-image: image-url('line.svg');
+}
+
+%line_new-svg {
+  // Available properties:
+  // prefix: ;
+  // width: 91;
+  // height: 91;
+  // filename: line_new.svg;
+  // basename: line_new;
+  // dirname: img;
+  // ext: .svg;
+  // path: line_new.svg;
+  // fullname: line_new-svg;
+  // mime: image/svg+xml;
+  // hash: 33040f7614e5a117c7b3e1bfbd52be00;
+  background-image: image-url('line_new.svg');
 }
 
 %m-1-jpg {
@@ -413,7 +632,7 @@ $compass-imagehelper-imagesmap: (
   // height: 495;
   // filename: m-1.jpg;
   // basename: m-1;
-  // dirname: images;
+  // dirname: img;
   // ext: .jpg;
   // path: m-1.jpg;
   // fullname: m-1-jpg;
@@ -429,7 +648,7 @@ $compass-imagehelper-imagesmap: (
   // height: 495;
   // filename: m-2.jpg;
   // basename: m-2;
-  // dirname: images;
+  // dirname: img;
   // ext: .jpg;
   // path: m-2.jpg;
   // fullname: m-2-jpg;
@@ -445,12 +664,12 @@ $compass-imagehelper-imagesmap: (
   // height: 495;
   // filename: m-3.jpg;
   // basename: m-3;
-  // dirname: images;
+  // dirname: img;
   // ext: .jpg;
   // path: m-3.jpg;
   // fullname: m-3-jpg;
   // mime: image/jpeg;
-  // hash: dc11f26c43d51fda283f2e8dbdb28ac2;
+  // hash: eaf1f97de08b025f5b79891161a2773a;
   background-image: image-url('m-3.jpg');
 }
 
@@ -461,7 +680,7 @@ $compass-imagehelper-imagesmap: (
   // height: 495;
   // filename: m-4.jpg;
   // basename: m-4;
-  // dirname: images;
+  // dirname: img;
   // ext: .jpg;
   // path: m-4.jpg;
   // fullname: m-4-jpg;
@@ -477,13 +696,29 @@ $compass-imagehelper-imagesmap: (
   // height: 497;
   // filename: m-5.jpg;
   // basename: m-5;
-  // dirname: images;
+  // dirname: img;
   // ext: .jpg;
   // path: m-5.jpg;
   // fullname: m-5-jpg;
   // mime: image/jpeg;
   // hash: 7078a4850f8045fcf9ae56605a5dde48;
   background-image: image-url('m-5.jpg');
+}
+
+%media_share-png {
+  // Available properties:
+  // prefix: ;
+  // width: 512;
+  // height: 512;
+  // filename: media_share.png;
+  // basename: media_share;
+  // dirname: img;
+  // ext: .png;
+  // path: media_share.png;
+  // fullname: media_share-png;
+  // mime: image/png;
+  // hash: 8093585f42bfe3599b2a22071beb57a2;
+  background-image: image-url('media_share.png');
 }
 
 %owl-video-play-png {
@@ -493,7 +728,7 @@ $compass-imagehelper-imagesmap: (
   // height: 80;
   // filename: owl.video.play.png;
   // basename: owl.video.play;
-  // dirname: images;
+  // dirname: img;
   // ext: .png;
   // path: owl.video.play.png;
   // fullname: owl-video-play-png;
@@ -509,7 +744,7 @@ $compass-imagehelper-imagesmap: (
   // height: 71;
   // filename: pchome24.png;
   // basename: pchome24;
-  // dirname: images;
+  // dirname: img;
   // ext: .png;
   // path: pchome24.png;
   // fullname: pchome24-png;
@@ -525,7 +760,7 @@ $compass-imagehelper-imagesmap: (
   // height: 91;
   // filename: play-solid.png;
   // basename: play-solid;
-  // dirname: images;
+  // dirname: img;
   // ext: .png;
   // path: play-solid.png;
   // fullname: play-solid-png;
@@ -541,7 +776,7 @@ $compass-imagehelper-imagesmap: (
   // height: 323;
   // filename: pro-1.jpg;
   // basename: pro-1;
-  // dirname: images;
+  // dirname: img;
   // ext: .jpg;
   // path: pro-1.jpg;
   // fullname: pro-1-jpg;
@@ -557,7 +792,7 @@ $compass-imagehelper-imagesmap: (
   // height: 323;
   // filename: pro-10.jpg;
   // basename: pro-10;
-  // dirname: images;
+  // dirname: img;
   // ext: .jpg;
   // path: pro-10.jpg;
   // fullname: pro-10-jpg;
@@ -573,7 +808,7 @@ $compass-imagehelper-imagesmap: (
   // height: 323;
   // filename: pro-2.jpg;
   // basename: pro-2;
-  // dirname: images;
+  // dirname: img;
   // ext: .jpg;
   // path: pro-2.jpg;
   // fullname: pro-2-jpg;
@@ -589,7 +824,7 @@ $compass-imagehelper-imagesmap: (
   // height: 323;
   // filename: pro-3.jpg;
   // basename: pro-3;
-  // dirname: images;
+  // dirname: img;
   // ext: .jpg;
   // path: pro-3.jpg;
   // fullname: pro-3-jpg;
@@ -605,7 +840,7 @@ $compass-imagehelper-imagesmap: (
   // height: 323;
   // filename: pro-4.jpg;
   // basename: pro-4;
-  // dirname: images;
+  // dirname: img;
   // ext: .jpg;
   // path: pro-4.jpg;
   // fullname: pro-4-jpg;
@@ -621,7 +856,7 @@ $compass-imagehelper-imagesmap: (
   // height: 323;
   // filename: pro-5.jpg;
   // basename: pro-5;
-  // dirname: images;
+  // dirname: img;
   // ext: .jpg;
   // path: pro-5.jpg;
   // fullname: pro-5-jpg;
@@ -637,7 +872,7 @@ $compass-imagehelper-imagesmap: (
   // height: 323;
   // filename: pro-6.jpg;
   // basename: pro-6;
-  // dirname: images;
+  // dirname: img;
   // ext: .jpg;
   // path: pro-6.jpg;
   // fullname: pro-6-jpg;
@@ -653,7 +888,7 @@ $compass-imagehelper-imagesmap: (
   // height: 323;
   // filename: pro-7.jpg;
   // basename: pro-7;
-  // dirname: images;
+  // dirname: img;
   // ext: .jpg;
   // path: pro-7.jpg;
   // fullname: pro-7-jpg;
@@ -669,7 +904,7 @@ $compass-imagehelper-imagesmap: (
   // height: 323;
   // filename: pro-8.jpg;
   // basename: pro-8;
-  // dirname: images;
+  // dirname: img;
   // ext: .jpg;
   // path: pro-8.jpg;
   // fullname: pro-8-jpg;
@@ -685,13 +920,77 @@ $compass-imagehelper-imagesmap: (
   // height: 323;
   // filename: pro-9.jpg;
   // basename: pro-9;
-  // dirname: images;
+  // dirname: img;
   // ext: .jpg;
   // path: pro-9.jpg;
   // fullname: pro-9-jpg;
   // mime: image/jpeg;
   // hash: 574a67159fd299cda71474f5f5a30285;
   background-image: image-url('pro-9.jpg');
+}
+
+%QRCode-png {
+  // Available properties:
+  // prefix: ;
+  // width: 1110;
+  // height: 1110;
+  // filename: QRCode.png;
+  // basename: QRCode;
+  // dirname: img;
+  // ext: .png;
+  // path: QRCode.png;
+  // fullname: QRCode-png;
+  // mime: image/png;
+  // hash: 109566848a4d0675d8460a4b5c696f96;
+  background-image: image-url('QRCode.png');
+}
+
+%search-svg {
+  // Available properties:
+  // prefix: ;
+  // width: 410;
+  // height: 410;
+  // filename: search.svg;
+  // basename: search;
+  // dirname: img;
+  // ext: .svg;
+  // path: search.svg;
+  // fullname: search-svg;
+  // mime: image/svg+xml;
+  // hash: 2e3273c8db0521751ccc3c67439f666e;
+  background-image: image-url('search.svg');
+}
+
+%sidebar_icon1-png {
+  // Available properties:
+  // prefix: ;
+  // width: 68;
+  // height: 68;
+  // filename: sidebar_icon1.png;
+  // basename: sidebar_icon1;
+  // dirname: img;
+  // ext: .png;
+  // path: sidebar_icon1.png;
+  // fullname: sidebar_icon1-png;
+  // mime: image/png;
+  // hash: 41ef4ddfcce16d4f8bb7f1f57fcfde78;
+  background-image: image-url('sidebar_icon1.png');
+}
+
+%sidebar_icon2-png {
+  // Available properties:
+  // prefix: ;
+  // width: 68;
+  // height: 68;
+  // filename: sidebar_icon2.png;
+  // basename: sidebar_icon2;
+  // dirname: img;
+  // ext: .png;
+  // path: sidebar_icon2.png;
+  // fullname: sidebar_icon2-png;
+  // mime: image/png;
+  // hash: 3a3997389c01fcd7755d18c65b548d53;
+  background-image: image-url('sidebar_icon2.png');
 }
 
 %t-1-jpg {
@@ -701,7 +1000,7 @@ $compass-imagehelper-imagesmap: (
   // height: 296;
   // filename: t-1.jpg;
   // basename: t-1;
-  // dirname: images;
+  // dirname: img;
   // ext: .jpg;
   // path: t-1.jpg;
   // fullname: t-1-jpg;
@@ -717,7 +1016,7 @@ $compass-imagehelper-imagesmap: (
   // height: 281;
   // filename: t-2.jpg;
   // basename: t-2;
-  // dirname: images;
+  // dirname: img;
   // ext: .jpg;
   // path: t-2.jpg;
   // fullname: t-2-jpg;
@@ -733,7 +1032,7 @@ $compass-imagehelper-imagesmap: (
   // height: 281;
   // filename: t-3.jpg;
   // basename: t-3;
-  // dirname: images;
+  // dirname: img;
   // ext: .jpg;
   // path: t-3.jpg;
   // fullname: t-3-jpg;
@@ -749,12 +1048,28 @@ $compass-imagehelper-imagesmap: (
   // height: 281;
   // filename: t-4.jpg;
   // basename: t-4;
-  // dirname: images;
+  // dirname: img;
   // ext: .jpg;
   // path: t-4.jpg;
   // fullname: t-4-jpg;
   // mime: image/jpeg;
   // hash: 1ab76d30b7c6a6e8e94d462f78999b55;
   background-image: image-url('t-4.jpg');
+}
+
+%item-V11_ab_dok-DG_0823-jpg {
+  // Available properties:
+  // prefix: ;
+  // width: 640;
+  // height: 640;
+  // filename: V11_ab_dok-DG_0823.jpg;
+  // basename: V11_ab_dok-DG_0823;
+  // dirname: item;
+  // ext: .jpg;
+  // path: item/V11_ab_dok-DG_0823.jpg;
+  // fullname: item-V11_ab_dok-DG_0823-jpg;
+  // mime: image/jpeg;
+  // hash: e66f4608c5a306234a44e74c0913739c;
+  background-image: image-url('item/V11_ab_dok-DG_0823.jpg');
 }
 

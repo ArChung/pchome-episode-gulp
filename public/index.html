@@ -2,74 +2,150 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title> 首頁 </title>
-  <!-- hiding the Browser’s User Interface -->
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="mobile-web-app-capable" content="yes">
-  <!-- iOS 6 -->
-  <meta name="apple-mobile-web-app-title" content="">
-  <!-- meta start -->
-  <meta name="title" content="首頁" />
-  <meta name="description" content="" />
-  <meta name="keywords" content="" />
-  <meta name="copyright" content="" />
-  <link rel="image_src" href="" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>【PChome24h購物】</title>
+  <meta property="og:title" content="【PChome24h購物】">
+  <meta property="og:description" content="台北市6小時到貨(試營運)，全台灣24小時到貨！" />
+  <meta property="og:image" content="https://a.ecimg.tw/css/2016/style/images/v201607/sitelogo/h24.png">
+  <link rel="apple-touch-icon" type="image/x-icon" href="https://e.ecimg.tw/img/icon/24-64x64.ico" sizes="64x64" />
+  <link rel="icon" type="image/x-icon" href="https://e.ecimg.tw/img/icon/24-64x64.ico" sizes="64x64" />
+  <link rel="icon" type="image/x-icon" href="https://e.ecimg.tw/img/icon/24-32x32.ico" sizes="32x32" />
+  <link rel="icon" type="image/x-icon" href="https://e.ecimg.tw/img/icon/24-16x16.ico" sizes="16x16" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="renderer" content="webkit|ie-comp|ie-stand">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="format-detection" content="address=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, shrink-to-fit=no, user-scalable=0">
 
-  <!-- OG -->
-  <meta property="og:title" content="首頁" />
-  <meta property="og:site_name" content="" />
-  <meta property="og:description" content="" />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="" />
-  <meta property="og:url" content="" />
-  <meta property="fb:app_id" content="" />
+
   <!-- CSS -->
-  
+  <link rel="stylesheet" href="css/lib.css">
+
+
   <link rel="stylesheet" href="css/all.css">
+
+  <!-- Google Tag Manager -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+      'site': '24h'
+    });
+    window.dataLayer && window.dataLayer.push({
+      'event': 'custom.event.pageview'
+    });
+  </script>
+  <!-- Google Tag Manager -->
+  <script>
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({
+        'gtm.start': new Date().getTime(),
+        event: 'gtm.js'
+      });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-TKSM5PF');
+  </script>
+  <!-- End Google Tag Manager -->
+
+
 </head>
 
 <body>
-  <!-- sider -->
-  <!--    Made by Erik Terwan    -->
-<!--   24th of November 2015   -->
-<!--        MIT License        -->
-<nav role="navigation">
-  <div id="menuToggle">
-    <!--
-    A fake / hidden checkbox is used as click reciever,
-    so you can use the :checked selector on it.
-    -->
-    <input type="checkbox" id='menu-check'/>
-    
-    <!--
-    Some spans to act as a hamburger.
-    
-    They are acting like a real hamburger,
-    not that McDonalds stuff.
-    -->
-    <span></span>
-    <span></span>
-    <span></span>
-    
-    <!--
-    Too bad the menu has to be inside of the button
-    but hey, it's pure CSS magic.
-    -->
-    <ul id="menu">
-      <a href="#" data-section='index'><li>TOP</li></a>
-      <a href="#" data-section='teaser'><li>預告片</li></a>
-      <a href="#" data-section='episode'><li>未來清單</li></a>
-      <a href="#" data-section='cast'><li>主角介紹</li></a>
-      <a href="#" data-section='director'><li>導演介紹</li></a>
-      <a href="#" data-section='behind'><li>幕後直擊</li></a>
-      <a href="#" data-section='products'><li>商品推薦</li></a>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TKSM5PF" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <!-- Header -->
+  <ul class="container-fluid d-flex justify-content-center header" id="top">
+    <li class="pc"><a href="https://24h.pchome.com.tw/"><img src="img/header_01.png"></a></li>
+    <li class="pc"><a href="https://ecvip.pchome.com.tw/?m=myaccount&f=show24hHelp"><img src="img/header_02.png"></a>
+    </li>
+    <li class="pc note"><a href="https://ecvip.pchome.com.tw/?m=myaccount&f=show24hHelp">例外及說明</a></li>
+    <li class="pc appDonload"><span>APP下載</span>
+      <div class="appQRcode"><a href="https://24h.m.pchome.com.tw/appget.php" target="_blank"><img
+            src="img/QRCode.png"></a></div>
+    </li>
+    <li class="pc social">
+      追蹤我們
+    </li>
+    <li class="pc icons">
+      <a href="https://www.facebook.com/pchome24h/" target="_blank"><img src="img/fb_new.svg"></a>
+      <a href="https://www.instagram.com/pchome24h/" target="_blank"><img src="img/ig_new.svg"></a>
+      <a href="https://line.me/R/ti/p/@pchome24h" target="_blank"><img src="img/line_new.svg"></a>
+    </li>
+    <li class="d-flex mb">
+      <a class="d-flex align-items-center" href="https://24h.m.pchome.com.tw/"><img src="img/24HLOGO.png"
+          class="logo"></a>
+    </li>
+  </ul>
+  <!-- END // Header -->
+
+  <!-- 右側選單 (手機置頂) -->
+  <div class="right_menu d-flex align-items-end flex-column">
+    <div class="arrow_box"><span class="arrow arRight"></span></div>
+    <ul class="menu_box radius_M">
+      <li><a href="#01">限時倒數</a></li>
+      <li><a href="#01">限時倒數</a></li>
+      <li><a href="#02">雙重加碼</a></li>
+      <li><a href="#02">雙重加碼</a></li>
+      <li><a href="#02">雙重加碼</a></li>
+      <li><a href="#02">雙重加碼</a></li>
+      <li><a href="#03">熱銷好貨</a></li>
+      <li class="banner"><a href="1113"><img src="img/demo.jpg"> </a></li>
+      <li class="gotop"><a href="#top"><span class="arrow arUp"></span>TOP</a></li>
     </ul>
   </div>
-</nav>
-  <!-- sider END-->
+  <div class="gotopMB">
+    <a href="#top"><span class="arrow arUp"></span>TOP</a>
+  </div>
+  <!-- END // 右側選單 -->
+
+  <!-- 左側選單 (手機置底) -->
+  <div class="left_menu d-flex align-items-start flex-column">
+    <div class="arrow_box"><span class="arrow arLeft"></span></div>
+    <ul class="menu_box radius_M ">
+      <li class="banner"><a href="1113"><img src="img/demo.jpg"> </a></li>
+      <li class="subtitle">
+        <dt>特色分會場</dt>
+      </li>
+      <li><a href="#01">11限時倒數</a></li>
+      <li><a href="#01">11限時倒數</a></li>
+      <li><a href="#02">22雙重加碼</a></li>
+      <li><a href="#02">雙重加碼</a></li>
+      <li><a href="#02">雙重加碼</a></li>
+      <li><a href="#02">雙重加碼</a></li>
+      <li><a href="#03">熱銷好貨</a></li>
+      <li class="act_01">
+        <a href="//shopping.pchome.com.tw/19/mi" target="_blank">小米旗艦</a>
+      </li>
+      <li class="act_02">
+        <a href="//shopping.pchome.com.tw/19/apple" target="_blank">Apple旗艦</a>
+      </li>
+      <li class="act_03">
+        <a href="//shopping.pchome.com.tw/activity/collection.htm" target="_blank">優惠快訊</a>
+      </li>
+    </ul>
+    <!-- 手機置底主選單 -->
+    <ul class="main_menu">
+      <li>
+        <a href="https://shopping.pchome.com.tw/19/main"><img src="img/sidebar_icon1.png">主會場</a>
+      </li>
+      <li class="subevent">
+        <a href="javascript:;"><img src="img/sidebar_icon2.png">分會場</a>
+      </li>
+    </ul>
+  </div>
+  <!-- END // 左側選單 -->
+
 
   <!-- navbar -->
   <header id='header'>
@@ -93,7 +169,7 @@
     <section class='hero' id='section-index'>
       <div class="bg"></div>
       <div class="container">
-        <img src="./images/kv.jpg" alt="">
+        <img src="./img/kv.jpg" alt="">
       </div>
     </section>
 
@@ -113,7 +189,7 @@
           出品：
         </div>
         <div class="producer tempHide">
-          <img src="./images/pchome24.png" alt="">
+          <img src="./img/pchome24.png" alt="">
         </div>
       </div>
     </section>
@@ -124,16 +200,16 @@
           <h2 class="t1 tempHide left">預告片</h2>
           <div class="t2 tempHide right">Teaser</div>
         </div>
-        <div class="list film-list">
-          <div class="list-item vBtn tempHide" data-vid='V6pksVyk620'>
-            <div class="img round-bd play-icon" style="background-image: url('./images/f-1.jpg');"></div>
+        <div class="pc-list film-list">
+          <div class="pc-list-item vBtn tempHide" data-vid='V6pksVyk620'>
+            <div class="img round-bd play-icon" style="background-image: url('./img/f-1.jpg');"></div>
             <div class="info">
               <h3 class="info-title">0 1 . 最愛的是誰？</h3>
               <p class="info-txt">誰會是他的最愛？誰又會與他擦身而過？</p>
             </div>
           </div>
-          <div class="list-item vBtn tempHide" data-vid='V6pksVyk620'>
-            <div class="img round-bd play-icon" style="background-image: url('./images/f-2.jpg');"></div>
+          <div class="pc-list-item vBtn tempHide" data-vid='V6pksVyk620'>
+            <div class="img round-bd play-icon" style="background-image: url('./img/f-2.jpg');"></div>
             <div class="info">
               <h3 class="info-title">0 2 . 抉擇時刻</h3>
               <p class="info-txt">一邊是友情，一邊是愛情，張鈞甯陷入兩難，該怎麼決定？</p>
@@ -152,9 +228,9 @@
           <h2 class="t1 tempHide left">未來清單</h2>
           <div class="t2 tempHide right">Episode</div>
         </div>
-        <div class="list film-list-2 film-list">
-          <div class="list-item tempHide vBtn" data-vid='V6pksVyk620'>
-            <div class="img round-bd play-icon" style="background-image: url('./images/f-1.jpg');"></div>
+        <div class="pc-list film-list-2 film-list">
+          <div class="pc-list-item tempHide vBtn" data-vid='V6pksVyk620'>
+            <div class="img round-bd play-icon" style="background-image: url('./img/f-1.jpg');"></div>
             <div class="info">
               <h3 class="info-title"><i class="i-play"></i>EPISODE 1</h3>
               <p class="info-txt">短時間裡，張鈞甯就被兩個人求婚！<br>
@@ -163,8 +239,8 @@
               </p>
             </div>
           </div>
-          <div class="list-item tempHide vBtn" data-vid=''>
-            <div class="img round-bd " style="background-image: url('./images/f-2.jpg');">
+          <div class="pc-list-item tempHide vBtn" data-vid=''>
+            <div class="img round-bd " style="background-image: url('./img/f-2.jpg');">
               <div class="note">
                 <div class="date">7/3</div>
                 <div class="note-txt">coming soon</div>
@@ -177,8 +253,8 @@
               </p>
             </div>
           </div>
-          <div class="list-item tempHide vBtn" data-vid=''>
-            <div class="img round-bd " style="background-image: url('./images/f-3.jpg');">
+          <div class="pc-list-item tempHide vBtn" data-vid=''>
+            <div class="img round-bd " style="background-image: url('./img/f-3.jpg');">
               <div class="note">
                 <div class="date">7/8</div>
                 <div class="note-txt">coming soon</div>
@@ -192,8 +268,8 @@
               </p>
             </div>
           </div>
-          <div class="list-item tempHide vBtn" data-vid=''>
-            <div class="img round-bd " style="background-image: url('./images/f-4.jpg');">
+          <div class="pc-list-item tempHide vBtn" data-vid=''>
+            <div class="img round-bd " style="background-image: url('./img/f-4.jpg');">
               <div class="note">
                 <div class="date">7/10</div>
                 <div class="note-txt">coming soon</div>
@@ -209,8 +285,8 @@
               </p>
             </div>
           </div>
-          <div class="list-item tempHide vBtn" data-vid=''>
-            <div class="img round-bd " style="background-image: url('./images/f-5.jpg');">
+          <div class="pc-list-item tempHide vBtn" data-vid=''>
+            <div class="img round-bd " style="background-image: url('./img/f-5.jpg');">
               <div class="note">
                 <div class="date">7/15</div>
                 <div class="note-txt">coming soon</div>
@@ -237,17 +313,17 @@
           <h2 class="t1 tempHide left">主角介紹</h2>
           <div class="t2 tempHide right">CAST</div>
         </div>
-        <div class="list man-list">
-          <div class="list-item tempHide">
-            <div class="img round-bd" style="background-image: url('./images/m-1.jpg');"></div>
+        <div class="pc-list man-list">
+          <div class="pc-list-item tempHide">
+            <div class="img round-bd" style="background-image: url('./img/m-1.jpg');"></div>
             <div class="info">
               <h3 class="info-title">張鈞甯<span class="role"></span></h3>
               <p class="info-txt">在面對兩個人的求婚的迷茫中，突然發現 PChome 購物的新功能，看見了未來與過去 ...
               </p>
             </div>
           </div>
-          <div class="list-item tempHide">
-            <div class="img round-bd" style="background-image: url('./images/m-2.jpg');"></div>
+          <div class="pc-list-item tempHide">
+            <div class="img round-bd" style="background-image: url('./img/m-2.jpg');"></div>
             <div class="info">
               <h3 class="info-title">小傑<span class="role">/ 王柏傑飾演</span></h3>
               <p class="info-txt">鈞甯大學時代就混在一起的哥兒們，一直默默陪伴、偷偷愛著她
@@ -255,8 +331,8 @@
               </p>
             </div>
           </div>
-          <div class="list-item tempHide">
-            <div class="img round-bd" style="background-image: url('./images/m-3.jpg');"></div>
+          <div class="pc-list-item tempHide">
+            <div class="img round-bd" style="background-image: url('./img/m-3.jpg');"></div>
             <div class="info">
               <h3 class="info-title">Gaby<span class="role">/ 藍鈞天飾演</span></h3>
               <p class="info-txt">鈞甯在工作上認識的男友，幽默風趣兼個性體貼，有與鈞甯共度一生的打算
@@ -264,8 +340,8 @@
               </p>
             </div>
           </div>
-          <div class="list-item tempHide">
-            <div class="img round-bd" style="background-image: url('./images/m-4.jpg');"></div>
+          <div class="pc-list-item tempHide">
+            <div class="img round-bd" style="background-image: url('./img/m-4.jpg');"></div>
             <div class="info">
               <h3 class="info-title">吳宜樺<span class="role"></span></h3>
               <p class="info-txt">謎樣的女子，在這交錯的關係中，又扮演著什麼角色呢？ </p>
@@ -282,9 +358,9 @@
           <h2 class="t1 tempHide left">導演介紹</h2>
           <div class="t2 tempHide right">director</div>
         </div>
-        <div class="list man-list">
-          <div class="list-item director tempHide">
-            <div class="img round-bd" style="background-image: url('./images/m-5.jpg');"></div>
+        <div class="pc-list man-list">
+          <div class="pc-list-item director tempHide">
+            <div class="img round-bd" style="background-image: url('./img/m-5.jpg');"></div>
             <div class="info">
               <h3 class="info-title ">張時霖 <span class="role">/ JEFF CHANG</span></h3>
               <p class="info-txt">國內知名廣告與 MV 影片導演，曾多次囊括國內外影片類大獎，並為眾多藝人最愛指定導演
@@ -302,16 +378,16 @@
           <h2 class="t1 tempHide left">幕後直擊</h2>
           <div class="t2 tempHide right">Behind the scenes</div>
         </div>
-        <div class="list film-list">
-          <div class="list-item tempHide vBtn" data-vid='V6pksVyk620'>
-            <div class="img round-bd play-icon" style="background-image: url('./images/t-1.jpg');"></div>
+        <div class="pc-list film-list">
+          <div class="pc-list-item tempHide vBtn" data-vid='V6pksVyk620'>
+            <div class="img round-bd play-icon" style="background-image: url('./img/t-1.jpg');"></div>
             <div class="info">
               <h3 class="info-title">0 1 . 全球唯一購物清單算命法</h3>
               <p class="info-txt">什麼？購物清單也能算出你的未來？！連水晶球都驚呆！</p>
             </div>
           </div>
-          <div class="list-item tempHide vBtn" data-vid=''>
-            <div class="img round-bd " style="background-image: url('./images/t-2.jpg');">
+          <div class="pc-list-item tempHide vBtn" data-vid=''>
+            <div class="img round-bd " style="background-image: url('./img/t-2.jpg');">
               <div class="note">
                 <div class="date">7/05</div>
                 <div class="note-txt">coming soon</div>
@@ -323,8 +399,8 @@
               </p>
             </div>
           </div>
-          <div class="list-item tempHide vBtn" data-vid=''>
-            <div class="img round-bd " style="background-image: url('./images/t-3.jpg');">
+          <div class="pc-list-item tempHide vBtn" data-vid=''>
+            <div class="img round-bd " style="background-image: url('./img/t-3.jpg');">
               <div class="note">
                 <div class="date">7/12</div>
                 <div class="note-txt">coming soon</div>
@@ -338,8 +414,8 @@
               </p>
             </div>
           </div>
-          <div class="list-item tempHide vBtn" data-vid=''>
-            <div class="img round-bd " style="background-image: url('./images/t-4.jpg');">
+          <div class="pc-list-item tempHide vBtn" data-vid=''>
+            <div class="img round-bd " style="background-image: url('./img/t-4.jpg');">
               <div class="note">
                 <div class="date">7/17</div>
                 <div class="note-txt">coming soon</div>
@@ -364,10 +440,10 @@
           <h2 class="t1 tempHide left"><i class="fas fa-gift"></i>商品推薦</h2>
           <div class="t2 tempHide right">Products</div>
         </div>
-        <div class="list pro-list">
-          <div class="list-item tempHide">
+        <div class="pc-list pro-list">
+          <div class="pc-list-item tempHide">
             <a href="#" target="_blank">
-              <div class="img round-bd" style="background-image: url('./images/pro-1.jpg');"></div>
+              <div class="img round-bd" style="background-image: url('./img/pro-1.jpg');"></div>
               <div class="info">
                 <h3 class="info-title">BOXMAN 玩偶
                 </h3>
@@ -377,9 +453,9 @@
               </div>
             </a>
           </div>
-          <div class="list-item tempHide">
+          <div class="pc-list-item tempHide">
             <a href="#" target="_blank">
-              <div class="img round-bd" style="background-image: url('./images/pro-2.jpg');"></div>
+              <div class="img round-bd" style="background-image: url('./img/pro-2.jpg');"></div>
               <div class="info">
                 <h3 class="info-title">答案之書
                 </h3>
@@ -388,9 +464,9 @@
               </div>
             </a>
           </div>
-          <div class="list-item tempHide">
+          <div class="pc-list-item tempHide">
             <a href="#" target="_blank">
-              <div class="img round-bd" style="background-image: url('./images/pro-3.jpg');"></div>
+              <div class="img round-bd" style="background-image: url('./img/pro-3.jpg');"></div>
               <div class="info">
                 <h3 class="info-title">PChome 24h 購物
                   物流小白箱
@@ -400,9 +476,9 @@
               </div>
             </a>
           </div>
-          <div class="list-item tempHide">
+          <div class="pc-list-item tempHide">
             <a href="#" target="_blank">
-              <div class="img round-bd" style="background-image: url('./images/pro-4.jpg');"></div>
+              <div class="img round-bd" style="background-image: url('./img/pro-4.jpg');"></div>
               <div class="info">
                 <h3 class="info-title">PChome 24h 購物
                   新物流箱
@@ -412,9 +488,9 @@
               </div>
             </a>
           </div>
-          <div class="list-item tempHide">
+          <div class="pc-list-item tempHide">
             <a href="#" target="_blank">
-              <div class="img round-bd" style="background-image: url('./images/pro-5.jpg');"></div>
+              <div class="img round-bd" style="background-image: url('./img/pro-5.jpg');"></div>
               <div class="info">
                 <h3 class="info-title">魔幻水晶球
                 </h3>
@@ -423,9 +499,9 @@
               </div>
             </a>
           </div>
-          <div class="list-item tempHide">
+          <div class="pc-list-item tempHide">
             <a href="#" target="_blank">
-              <div class="img round-bd" style="background-image: url('./images/pro-6.jpg');"></div>
+              <div class="img round-bd" style="background-image: url('./img/pro-6.jpg');"></div>
               <div class="info">
                 <h3 class="info-title">拍立得相機
                 </h3>
@@ -433,9 +509,9 @@
               </div>
             </a>
           </div>
-          <div class="list-item tempHide">
+          <div class="pc-list-item tempHide">
             <a href="#" target="_blank">
-              <div class="img round-bd" style="background-image: url('./images/pro-7.jpg');"></div>
+              <div class="img round-bd" style="background-image: url('./img/pro-7.jpg');"></div>
               <div class="info">
                 <h3 class="info-title">Ｖ 領腰帶上衣
 
@@ -447,9 +523,9 @@
               </div>
             </a>
           </div>
-          <div class="list-item tempHide">
+          <div class="pc-list-item tempHide">
             <a href="#" target="_blank">
-              <div class="img round-bd" style="background-image: url('./images/pro-8.jpg');"></div>
+              <div class="img round-bd" style="background-image: url('./img/pro-8.jpg');"></div>
               <div class="info">
                 <h3 class="info-title">嬰幼兒奶瓶
 
@@ -458,9 +534,9 @@
               </div>
             </a>
           </div>
-          <div class="list-item tempHide">
+          <div class="pc-list-item tempHide">
             <a href="#" target="_blank">
-              <div class="img round-bd" style="background-image: url('./images/pro-9.jpg');"></div>
+              <div class="img round-bd" style="background-image: url('./img/pro-9.jpg');"></div>
               <div class="info">
                 <h3 class="info-title">求婚套餐
 
@@ -472,9 +548,9 @@
               </div>
             </a>
           </div>
-          <div class="list-item tempHide">
+          <div class="pc-list-item tempHide">
             <a href="#" target="_blank">
-              <div class="img round-bd" style="background-image: url('./images/pro-10.jpg');"></div>
+              <div class="img round-bd" style="background-image: url('./img/pro-10.jpg');"></div>
               <div class="info">
                 <h3 class="info-title">加大雙人床墊
 
@@ -487,9 +563,9 @@
           </div>
 
 
-          <div class="list-item"></div>
-          <div class="list-item"></div>
-          <div class="list-item"></div>
+          <div class="pc-list-item"></div>
+          <div class="pc-list-item"></div>
+          <div class="pc-list-item"></div>
         </div>
       </div>
     </section>
@@ -497,10 +573,30 @@
 </main>
   <!-- contents END -->
 
-  <!-- footer -->
-  <footer class="footer">
-</footer>
-  <!-- footer END -->
+
+  <div class="d-flex justify-content-center d-flex align-items-center card_note">
+    <div class="left">謹慎理財　信用至上</div>
+    <ul class="right">
+      <li>花旗信用卡循環利率：6.88%~15%循環利率基準日為104年9月1日；預借現金手續費：</li>
+      <li>預借現金金額乘以3.5%加上新臺幣100元其他費用請上花旗網站www.citibank.com.tw查詢。</li>
+    </ul>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <ul class="d-flex justify-content-center align-items-center mb-3">
+      <li class="text">追蹤我們</li>
+      <li><a href="https://www.facebook.com/pchome24h/" target="_blank"><img src="img/fb_new.svg"></a></li>
+      <li><a href="https://www.instagram.com/pchome24h/" target="_blank"><img src="img/ig_new.svg"></a></li>
+      <li><a href="https://line.me/R/ti/p/@pchome24h" target="_blank"><img src="img/line_new.svg"></a></li>
+    </ul>
+    <p>本活動頁商品規格、顏色、價位、贈品如與銷售網頁不符，以銷售網頁標示為準！</p>
+    <p>網路家庭版權所有Copyright PChome Online版權所有，轉載必究</p>
+    <p>*PChome聯名卡活動期間至2019/12/31，相關優惠權益或服務之細節及限制條件請詳花旗官網或PChome線上購物。</p>
+  </div>
+  <!-- END // Footer -->
+
+
 
 
   <script src="js/lib.js"></script>

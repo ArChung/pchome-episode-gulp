@@ -1,21 +1,22 @@
 // commons
-.round-bd
-  border-radius: 5px
-  overflow: hidden
-.ls-1
-  letter-spacing: .15em
+.mainContainer
+  .round-bd
+    border-radius: 5px
+    overflow: hidden
+  .ls-1
+    letter-spacing: .15em
 
-.tempHide
-  transform: translate(0, 50px)
-  opacity: 0
-  +dTime(.8s)
+  .tempHide
+    transform: translate(0, 50px)
+    opacity: 0
+    +dTime(.8s)
 
-  &.left
-    transform: translate(-50px, 0px)
-  &.right
-    transform: translate(50px, 0px)
-  &.top
-    transform: translate(0px, -50px)
-  &.show
-    opacity: 1
-    transform: translate(0, 0)
+    &.left
+      transform: translate(-50px, 0px)
+    &.right
+      transform: translate(50px, 0px)
+    &.top
+      transform: translate(0px, -50px)
+    &.show
+      opacity: 1
+      transform: translate(0, 0)

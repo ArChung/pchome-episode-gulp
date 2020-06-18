@@ -1,139 +1,138 @@
 // index.sass
 
 
-body
-  background-color: #fff
+
+.mainContainer
   color: white
-
-section
-  background-color: #06121e
-  &:nth-child(2n)
-    background-color: #020d18
-  &.hero
-    position: relative
-    overflow: hidden
-    .bg
-      position: absolute
-      top: 0
-      width: 100%
-      height: 100%
-      left: 0
-      +coverBg('kv.jpg')
-      z-index: 0
-      filter: blur(10px)
-      transform: scale(1.05)
-      opacity: .3
-      
+  section
+    background-color: #06121e
+    &:nth-child(2n)
+      background-color: #020d18
+    &.hero
+      position: relative
+      overflow: hidden
+      .bg
+        position: absolute
+        top: 0
+        width: 100%
+        height: 100%
+        left: 0
+        +coverBg('kv.jpg')
+        z-index: 0
+        filter: blur(10px)
+        transform: scale(1.05)
+        opacity: .3
+        
+      .container
+        padding: 0 25px
+        position: relative
+        z-index: 2
+        +phone 
+          padding: 0
     .container
-      padding: 0 25px
-      position: relative
-      z-index: 2
-      +phone 
-        padding: 0
-  .container
-    padding: 70px 25px
-    max-width: 1140px
-    margin: 0 auto
+      padding: 70px 25px
+      max-width: 1140px
+      margin: 0 auto
 
-    .s-title
-      margin-bottom: 35px
+      .s-title
+        margin-bottom: 35px
+        position: relative
+        display: inline-block
+        &:after
+          width: 110%
+          height: 3px
+          background-color: #b01414
+          position: absolute
+          content: ''
+          bottom: 12px
+          left: 0
+
+        .t1
+          font-size: 28px
+          font-weight: bold
+          letter-spacing: 0.15em
+          margin-top: 0
+        .t2
+          font-weight: bold
+          text-transform: uppercase
+          position: absolute
+          left: 40%
+          top: 25%
+          font-size: 45px
+          font-style: italic
+          opacity: .1
+          white-space: nowrap
+          padding-right: 20px
+
+
+  .info-section
+    .container
+      padding-left: 50px
+      
+    .outline
+      font-size: 24px
+      line-height: 1.7em
       position: relative
-      display: inline-block
+      padding-left: 1.5em
+      font-weight: bold
       &:after
-        width: 110%
-        height: 3px
-        background-color: #b01414
         position: absolute
         content: ''
-        bottom: 12px
+        top: 0
         left: 0
-
-      .t1
-        font-size: 28px
-        font-weight: bold
-        letter-spacing: 0.15em
-        margin-top: 0
-      .t2
-        font-weight: bold
-        text-transform: uppercase
-        position: absolute
-        left: 40%
-        top: 25%
-        font-size: 45px
-        font-style: italic
-        opacity: .1
-        white-space: nowrap
-        padding-right: 20px
-
-
-.info-section
-  .container
-    padding-left: 50px
-    
-  .outline
-    font-size: 24px
-    line-height: 1.7em
-    position: relative
-    padding-left: 1.5em
-    font-weight: bold
-    &:after
-      position: absolute
-      content: ''
-      top: 0
-      left: 0
-      width: 3px
-      height: 100%
-      background-color: #4280bf
-  .cast
-    margin-top: 45px
-    line-height: 1.7em
-    color: #abb7c4
-  .producer
-    margin-top: 0px
-    font-weight: bold
-    font-size: 20px
-    img
-      max-width: 450px
+        width: 3px
+        height: 100%
+        background-color: #4280bf
+    .cast
+      margin-top: 45px
+      line-height: 1.7em
+      color: #abb7c4
+    .producer
       margin-top: 0px
+      font-weight: bold
+      font-size: 20px
+      img
+        max-width: 450px
+        margin-top: 0px
 
-.i-play
-  +coverBg('play-solid.png')
-  display: inline-block
-  width: 18px
-  margin-right: .7em
-  vertical-align: text-top
-  margin-top: 5px
-  +ratio(80,91)
+  .i-play
+    +coverBg('play-solid.png')
+    display: inline-block
+    width: 18px
+    margin-right: .7em
+    vertical-align: text-top
+    margin-top: 5px
+    +ratio(80,91)
 
-  
-#pop
-  position: fixed
-  width: 100%
-  height: 100%
-  top: 0
-  left: 0
-  z-index: 100
-  display: flex
-  justify-content: center
-  align-items: center
-  padding: 25px
-  .bg
-    position: absolute
+    
+  #pop
+    position: fixed
     width: 100%
     height: 100%
     top: 0
     left: 0
-    background-color: rgba(black,.7)
-
-  .videoWrap
-    +ratio(16,9)
-    width: 100%
-    max-width: 900px
-    background-color: #000
-    > *
+    z-index: 100
+    display: flex
+    justify-content: center
+    align-items: center
+    padding: 25px
+    .bg
       position: absolute
       width: 100%
       height: 100%
       top: 0
       left: 0
+      background-color: rgba(black,.7)
+
+    .videoWrap
+      +ratio(16,9)
+      width: 100%
+      max-width: 900px
+      background-color: #000
+      > *
+        position: absolute
+        width: 100%
+        height: 100%
+        top: 0
+        left: 0
       

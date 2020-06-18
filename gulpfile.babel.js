@@ -49,7 +49,8 @@ export function copy() {
       "!src/sass/**/**",
       "!src/views/**/**",
       "!src/**/*.ejs",
-      "!src/**/*.html"
+      "!src/**/*.html",
+      "!src/css/**/**"
     ])
     .pipe(gulp.dest("./public"))
 }
@@ -112,11 +113,11 @@ export function sass() {
 
 
 export function goSassImage() {
-  return gulp.src('./src/images/**/*.+(jpeg|jpg|png|gif|svg)')
+  return gulp.src('./src/img/**/*.+(jpeg|jpg|png|gif|svg)')
     .pipe(sassImage({
       targetFile: '_images_data.scss', // 處理完的 SCSS 檔名
       css_path: './src/css', // CSS 檔案位置
-      images_path: './src/images', // image 檔案位置
+      images_path: './src/img', // image 檔案位置
       includeData: false, // 是否將 image 加入到 SCSS 中
     }))
     .pipe(gulp.dest('src/sass')); // 處理後的 SCSS 檔放位置
@@ -162,9 +163,9 @@ export function babel() {
  *****************************************************/
 export function imageMin() {
   return gulp
-    .src("./src/images/*")
+    .src("./src/img/*")
     .pipe($.if(envIsPro, $.imagemin()))
-    .pipe(gulp.dest("./public/images"))
+    .pipe(gulp.dest("./public/img"))
     .pipe($.if(envIsPro, browserSync.stream()))
 
 }
@@ -191,7 +192,7 @@ export function watch() {
     sass
   )
   gulp.watch("./src/js/**/*.js", babel)
-  gulp.watch("./src/images/**/*.+(jpeg|jpg|png|gif|svg)", gulp.series(goSassImage, imageMin));
+  gulp.watch("./src/img/**/*.+(jpeg|jpg|png|gif|svg)", gulp.series(goSassImage, imageMin));
   console.log("watching file ~")
 }
 
