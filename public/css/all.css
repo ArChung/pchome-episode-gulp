@@ -771,7 +771,8 @@ a {
 .mainContainer {
   color: white; }
   .mainContainer section {
-    background-color: #06121e; }
+    background-color: #06121e;
+    margin-top: -1px; }
     .mainContainer section:nth-child(2n) {
       background-color: #020d18; }
     .mainContainer section.hero {
