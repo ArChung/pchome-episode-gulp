@@ -130,7 +130,7 @@ export function goSassImage() {
 
 export function babel() {
   return gulp
-    .src(["./src/js/**/*.js","!./src/js/lib/*"])
+    .src(["./src/js/**/*.js","!./src/js/lib/*","!./src/js/pchome/*"])
     .pipe(order([
       "tool/*.js",
       "**/*.js",

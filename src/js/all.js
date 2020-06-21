@@ -32,7 +32,7 @@ function initVideoBtn() {
 function init_simple_ani() {
   inView('.tempHide')
     .on('enter', (el) => {
-      $(el).addClass('show');
+      $(el).addClass('t-show');
     })
   // .on('exit', (el) => {
   //   $(el).removeClass('show');

@@ -57,7 +57,7 @@
           text-transform: uppercase
           position: absolute
           left: 40%
-          top: 25%
+          top: 40%
           font-size: 45px
           font-style: italic
           opacity: .1
@@ -105,34 +105,34 @@
     +ratio(80,91)
 
     
-  #pop
-    position: fixed
+#pop
+  position: fixed
+  width: 100%
+  height: 100%
+  top: 0
+  left: 0
+  z-index: 100
+  display: flex
+  justify-content: center
+  align-items: center
+  padding: 25px
+  .bg
+    position: absolute
     width: 100%
     height: 100%
     top: 0
     left: 0
-    z-index: 100
-    display: flex
-    justify-content: center
-    align-items: center
-    padding: 25px
-    .bg
+    background-color: rgba(black,.7)
+
+  .videoWrap
+    +ratio(16,9)
+    width: 100%
+    max-width: 900px
+    background-color: #000
+    > *
       position: absolute
       width: 100%
       height: 100%
       top: 0
       left: 0
-      background-color: rgba(black,.7)
-
-    .videoWrap
-      +ratio(16,9)
-      width: 100%
-      max-width: 900px
-      background-color: #000
-      > *
-        position: absolute
-        width: 100%
-        height: 100%
-        top: 0
-        left: 0
-      
+    
