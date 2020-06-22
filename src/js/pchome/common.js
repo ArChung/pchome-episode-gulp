@@ -4,10 +4,10 @@ $('.right_menu .arrow_box').click(function () {
 	$('.right_menu .arRight').toggleClass('rotate');
 	$('.right_menu .menu_box').toggleClass('gohide');
 });
-$('.left_menu .arrow_box').click(function () {
-	$('.left_menu .arLeft').toggleClass('rotate');
-	$('.left_menu .menu_box').toggleClass('gohide');
-});
+// $('.left_menu .arrow_box').click(function () {
+// 	$('.left_menu .arLeft').toggleClass('rotate');
+// 	$('.left_menu .menu_box').toggleClass('gohide');
+// });
 $('li.subevent a, .menuMask').click(function () {
 	$('.left_menu .menu_box, .menuMask').toggleClass('show');
 });

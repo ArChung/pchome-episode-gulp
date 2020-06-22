@@ -199,7 +199,7 @@ $compass-imagehelper-imagesmap: (
   'kv.jpg': (
     width: '1440',
     height: '900',
-    hash: '95adedb911140223df389dcda326ed6a'
+    hash: '8fa18c4f9f99e2877ea4b3e51eda8715'
   ),
   'line.svg': (
     width: '57',
@@ -247,9 +247,9 @@ $compass-imagehelper-imagesmap: (
     hash: '4a37f8008959c75f619bf0a3a4e2d7a2'
   ),
   'pchome24.png': (
-    width: '800',
-    height: '71',
-    hash: 'dead0b04de4271d2d8c8726c36c18f52'
+    width: '600',
+    height: '47',
+    hash: '3d6c8f4bf0597fda2955702a33476ff5'
   ),
   'play-solid.png': (
     width: '80',
@@ -259,7 +259,7 @@ $compass-imagehelper-imagesmap: (
   'pro-1.jpg': (
     width: '300',
     height: '323',
-    hash: '78d85446b21b075c753d6c52011fbd51'
+    hash: 'f6d329e33a939dc50ed5a2f5d64498c7'
   ),
   'pro-10.jpg': (
     width: '300',
@@ -345,6 +345,16 @@ $compass-imagehelper-imagesmap: (
     width: '500',
     height: '281',
     hash: '1ab76d30b7c6a6e8e94d462f78999b55'
+  ),
+  'te-1.jpg': (
+    width: '600',
+    height: '350',
+    hash: '69b35fbfe24230083ab67e98bd204231'
+  ),
+  'te-2.jpg': (
+    width: '600',
+    height: '350',
+    hash: '7808bbfb35edc8cbaeaaec35987a8e13'
   ),
   'item/V11_ab_dok-DG_0823.jpg': (
     width: '640',
@@ -589,7 +599,7 @@ $compass-imagehelper-imagesmap: (
   // path: kv.jpg;
   // fullname: kv-jpg;
   // mime: image/jpeg;
-  // hash: 95adedb911140223df389dcda326ed6a;
+  // hash: 8fa18c4f9f99e2877ea4b3e51eda8715;
   background-image: image-url('kv.jpg');
 }
 
@@ -740,8 +750,8 @@ $compass-imagehelper-imagesmap: (
 %pchome24-png {
   // Available properties:
   // prefix: ;
-  // width: 800;
-  // height: 71;
+  // width: 600;
+  // height: 47;
   // filename: pchome24.png;
   // basename: pchome24;
   // dirname: img;
@@ -749,7 +759,7 @@ $compass-imagehelper-imagesmap: (
   // path: pchome24.png;
   // fullname: pchome24-png;
   // mime: image/png;
-  // hash: dead0b04de4271d2d8c8726c36c18f52;
+  // hash: 3d6c8f4bf0597fda2955702a33476ff5;
   background-image: image-url('pchome24.png');
 }
 
@@ -781,7 +791,7 @@ $compass-imagehelper-imagesmap: (
   // path: pro-1.jpg;
   // fullname: pro-1-jpg;
   // mime: image/jpeg;
-  // hash: 78d85446b21b075c753d6c52011fbd51;
+  // hash: f6d329e33a939dc50ed5a2f5d64498c7;
   background-image: image-url('pro-1.jpg');
 }
 
@@ -1055,6 +1065,38 @@ $compass-imagehelper-imagesmap: (
   // mime: image/jpeg;
   // hash: 1ab76d30b7c6a6e8e94d462f78999b55;
   background-image: image-url('t-4.jpg');
+}
+
+%te-1-jpg {
+  // Available properties:
+  // prefix: ;
+  // width: 600;
+  // height: 350;
+  // filename: te-1.jpg;
+  // basename: te-1;
+  // dirname: img;
+  // ext: .jpg;
+  // path: te-1.jpg;
+  // fullname: te-1-jpg;
+  // mime: image/jpeg;
+  // hash: 69b35fbfe24230083ab67e98bd204231;
+  background-image: image-url('te-1.jpg');
+}
+
+%te-2-jpg {
+  // Available properties:
+  // prefix: ;
+  // width: 600;
+  // height: 350;
+  // filename: te-2.jpg;
+  // basename: te-2;
+  // dirname: img;
+  // ext: .jpg;
+  // path: te-2.jpg;
+  // fullname: te-2-jpg;
+  // mime: image/jpeg;
+  // hash: 7808bbfb35edc8cbaeaaec35987a8e13;
+  background-image: image-url('te-2.jpg');
 }
 
 %item-V11_ab_dok-DG_0823-jpg {
