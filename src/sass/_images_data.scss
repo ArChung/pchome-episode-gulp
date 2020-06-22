@@ -131,6 +131,11 @@ $compass-imagehelper-imagesmap: (
     height: '127',
     hash: 'c8204ba06676c0c1e7efd70c5bfe6cc0'
   ),
+  'QRCode.png': (
+    width: '1110',
+    height: '1110',
+    hash: '109566848a4d0675d8460a4b5c696f96'
+  ),
   'demo.jpg': (
     width: '250',
     height: '250',
@@ -306,11 +311,6 @@ $compass-imagehelper-imagesmap: (
     height: '323',
     hash: '574a67159fd299cda71474f5f5a30285'
   ),
-  'QRCode.png': (
-    width: '1110',
-    height: '1110',
-    hash: '109566848a4d0675d8460a4b5c696f96'
-  ),
   'search.svg': (
     width: '410',
     height: '410',
@@ -377,6 +377,22 @@ $compass-imagehelper-imagesmap: (
   // mime: image/png;
   // hash: c8204ba06676c0c1e7efd70c5bfe6cc0;
   background-image: image-url('24HLOGO.png');
+}
+
+%QRCode-png {
+  // Available properties:
+  // prefix: ;
+  // width: 1110;
+  // height: 1110;
+  // filename: QRCode.png;
+  // basename: QRCode;
+  // dirname: img;
+  // ext: .png;
+  // path: QRCode.png;
+  // fullname: QRCode-png;
+  // mime: image/png;
+  // hash: 109566848a4d0675d8460a4b5c696f96;
+  background-image: image-url('QRCode.png');
 }
 
 %demo-jpg {
@@ -937,22 +953,6 @@ $compass-imagehelper-imagesmap: (
   // mime: image/jpeg;
   // hash: 574a67159fd299cda71474f5f5a30285;
   background-image: image-url('pro-9.jpg');
-}
-
-%QRCode-png {
-  // Available properties:
-  // prefix: ;
-  // width: 1110;
-  // height: 1110;
-  // filename: QRCode.png;
-  // basename: QRCode;
-  // dirname: img;
-  // ext: .png;
-  // path: QRCode.png;
-  // fullname: QRCode-png;
-  // mime: image/png;
-  // hash: 109566848a4d0675d8460a4b5c696f96;
-  background-image: image-url('QRCode.png');
 }
 
 %search-svg {
