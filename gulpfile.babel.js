@@ -7,6 +7,12 @@ import sassImage from "gulp-sass-image"
 import order from "gulp-order"
 import useref from "gulp-useref"
 import terser from 'gulp-terser'
+import cache from "gulp-cache"
+import imagemin from "gulp-imagemin"
+import imageminPngquant from "imagemin-pngquant"
+import imageminZopfli from "imagemin-zopfli"
+import imageminMozjpeg from "imagemin-mozjpeg" //need to run 'brew install libpng'
+import imageminGiflossy from "imagemin-giflossy"
 
 const $ = require("gulp-load-plugins")()
 
@@ -164,7 +170,36 @@ export function babel() {
 export function imageMin() {
   return gulp
     .src("./src/img/*")
-    .pipe($.if(envIsPro, $.imagemin()))
+    .pipe($.if(envIsPro, cache(imagemin([
+      //png
+      imageminPngquant({
+        speed: 1,
+        quality: [0.95, 1] //lossy settings
+      }),
+      imageminZopfli({
+        more: true
+      }),
+      //gif
+      imageminGiflossy({
+        optimizationLevel: 3,
+        optimize: 3, //keep-empty: Preserve empty transparent frames
+        lossy: 2
+      }),
+      //svg
+      imagemin.svgo({
+        plugins: [{
+          removeViewBox: false
+        }]
+      }),
+      //jpg lossless
+      imagemin.mozjpeg({
+        progressive: true
+      }),
+      //jpg very light lossy, use s jpegtran
+      imageminMozjpeg({
+        quality: 90
+      })
+    ]))))
     .pipe(gulp.dest("./public/img"))
     .pipe($.if(envIsPro, browserSync.stream()))
 
