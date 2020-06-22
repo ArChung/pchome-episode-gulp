@@ -176,6 +176,16 @@
         .img
           +ratio(40,43)
           +dTime
+        .info
+          &.withHand
+            position: relative
+            &:after
+              content: ''
+              position: absolute
+              right: 16px
+              top: -10px
+              +bg('hand.png')
+              +updown
         &.ptr-n
           pointer-events: none
         &:hover

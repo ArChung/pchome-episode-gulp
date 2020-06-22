@@ -174,18 +174,18 @@ export function imageMin() {
       //png
       imageminPngquant({
         speed: 1,
-        quality: [0.95, 1] //lossy settings
+        quality: [0.7, 0.9] //lossy settings
       }),
       imageminZopfli({
         more: true
       }),
-      //gif
+      // //gif
       imageminGiflossy({
         optimizationLevel: 3,
         optimize: 3, //keep-empty: Preserve empty transparent frames
         lossy: 2
       }),
-      //svg
+      // //svg
       imagemin.svgo({
         plugins: [{
           removeViewBox: false
@@ -201,7 +201,7 @@ export function imageMin() {
       })
     ]))))
     .pipe(gulp.dest("./public/img"))
-    .pipe($.if(envIsPro, browserSync.stream()))
+    .pipe($.if(!envIsPro, browserSync.stream()))
 
 }
 

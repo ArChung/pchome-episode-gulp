@@ -13,23 +13,16 @@
       position: relative
       overflow: hidden
       .bg
-        position: absolute
-        top: 0
+        height: 680px
         width: 100%
-        height: 100%
-        left: 0
-        +coverBg('kv.jpg')
-        z-index: 0
-        filter: blur(10px)
-        transform: scale(1.05)
-        opacity: .3
-        
-      .container
-        padding: 0 25px
-        position: relative
-        z-index: 2
-        +phone 
-          padding: 0
+        +bgi('kv.jpg')
+        background-position: 50% 50%
+        background-repeat: no-repeat
+        background-color: #c3c6cb
+        +phone
+          +ratio(1100,680)
+          height: auto
+          +coverBg
     .container
       padding: 70px 25px
       max-width: 1140px

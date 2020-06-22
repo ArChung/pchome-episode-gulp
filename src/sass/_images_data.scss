@@ -126,15 +126,15 @@
 $compass-imagehelper-path-prefix: '../img/';
 
 $compass-imagehelper-imagesmap: (
+  '123.png': (
+    width: '600',
+    height: '47',
+    hash: '35608015a7d4f9d42b3853cb14cc4b12'
+  ),
   '24HLOGO.png': (
     width: '960',
     height: '127',
     hash: 'c8204ba06676c0c1e7efd70c5bfe6cc0'
-  ),
-  'QRCode.png': (
-    width: '1110',
-    height: '1110',
-    hash: '109566848a4d0675d8460a4b5c696f96'
   ),
   'demo.jpg': (
     width: '250',
@@ -144,7 +144,7 @@ $compass-imagehelper-imagesmap: (
   'f-1.jpg': (
     width: '600',
     height: '338',
-    hash: '3cc3ad194674705be9c9d2ad95ced7e9'
+    hash: '0c3413ae8c3e119236aaef579d4b784e'
   ),
   'f-2.jpg': (
     width: '600',
@@ -164,7 +164,7 @@ $compass-imagehelper-imagesmap: (
   'f-5.jpg': (
     width: '600',
     height: '338',
-    hash: '93bf8c4cac86f8bac7358c3e8d84ac16'
+    hash: 'b5d684f1247669db6bc37eec17754b07'
   ),
   'fb.svg': (
     width: '60',
@@ -175,6 +175,11 @@ $compass-imagehelper-imagesmap: (
     width: '91',
     height: '91',
     hash: '68f7335d56cf92d593f8ba691c5baf9a'
+  ),
+  'hand.png': (
+    width: '40',
+    height: '47',
+    hash: 'be59c07d106d32e5af3c3685663bdb42'
   ),
   'header_01.png': (
     width: '464',
@@ -202,9 +207,9 @@ $compass-imagehelper-imagesmap: (
     hash: '059d8a991fc04c0840c2b898ac5a9a18'
   ),
   'kv.jpg': (
-    width: '1440',
-    height: '900',
-    hash: '8fa18c4f9f99e2877ea4b3e51eda8715'
+    width: '1980',
+    height: '680',
+    hash: '65aa905242a8615e1bd2984120169946'
   ),
   'line.svg': (
     width: '57',
@@ -219,7 +224,7 @@ $compass-imagehelper-imagesmap: (
   'm-1.jpg': (
     width: '300',
     height: '495',
-    hash: '4c0c2ad45ff067f5ad687c86af9de28a'
+    hash: '6da0ac99df45c9119eb42982b0173388'
   ),
   'm-2.jpg': (
     width: '300',
@@ -250,11 +255,6 @@ $compass-imagehelper-imagesmap: (
     width: '80',
     height: '80',
     hash: '4a37f8008959c75f619bf0a3a4e2d7a2'
-  ),
-  'pchome24.png': (
-    width: '600',
-    height: '47',
-    hash: '88c88dbc4497e748f27f18c9a0da5b70'
   ),
   'play-solid.png': (
     width: '80',
@@ -311,6 +311,11 @@ $compass-imagehelper-imagesmap: (
     height: '323',
     hash: '574a67159fd299cda71474f5f5a30285'
   ),
+  'QRCode.png': (
+    width: '1110',
+    height: '1110',
+    hash: '109566848a4d0675d8460a4b5c696f96'
+  ),
   'search.svg': (
     width: '410',
     height: '410',
@@ -329,7 +334,7 @@ $compass-imagehelper-imagesmap: (
   't-1.jpg': (
     width: '500',
     height: '296',
-    hash: 'a6574e8f804447160343599d72182ea4'
+    hash: '6b24b8666c3f804e785de5ddde8b0bc9'
   ),
   't-2.jpg': (
     width: '500',
@@ -363,6 +368,22 @@ $compass-imagehelper-imagesmap: (
   ),
 );
 
+%123-png {
+  // Available properties:
+  // prefix: ;
+  // width: 600;
+  // height: 47;
+  // filename: 123.png;
+  // basename: 123;
+  // dirname: img;
+  // ext: .png;
+  // path: 123.png;
+  // fullname: 123-png;
+  // mime: image/png;
+  // hash: 35608015a7d4f9d42b3853cb14cc4b12;
+  background-image: image-url('123.png');
+}
+
 %24HLOGO-png {
   // Available properties:
   // prefix: ;
@@ -377,22 +398,6 @@ $compass-imagehelper-imagesmap: (
   // mime: image/png;
   // hash: c8204ba06676c0c1e7efd70c5bfe6cc0;
   background-image: image-url('24HLOGO.png');
-}
-
-%QRCode-png {
-  // Available properties:
-  // prefix: ;
-  // width: 1110;
-  // height: 1110;
-  // filename: QRCode.png;
-  // basename: QRCode;
-  // dirname: img;
-  // ext: .png;
-  // path: QRCode.png;
-  // fullname: QRCode-png;
-  // mime: image/png;
-  // hash: 109566848a4d0675d8460a4b5c696f96;
-  background-image: image-url('QRCode.png');
 }
 
 %demo-jpg {
@@ -423,7 +428,7 @@ $compass-imagehelper-imagesmap: (
   // path: f-1.jpg;
   // fullname: f-1-jpg;
   // mime: image/jpeg;
-  // hash: 3cc3ad194674705be9c9d2ad95ced7e9;
+  // hash: 0c3413ae8c3e119236aaef579d4b784e;
   background-image: image-url('f-1.jpg');
 }
 
@@ -487,7 +492,7 @@ $compass-imagehelper-imagesmap: (
   // path: f-5.jpg;
   // fullname: f-5-jpg;
   // mime: image/jpeg;
-  // hash: 93bf8c4cac86f8bac7358c3e8d84ac16;
+  // hash: b5d684f1247669db6bc37eec17754b07;
   background-image: image-url('f-5.jpg');
 }
 
@@ -521,6 +526,22 @@ $compass-imagehelper-imagesmap: (
   // mime: image/svg+xml;
   // hash: 68f7335d56cf92d593f8ba691c5baf9a;
   background-image: image-url('fb_new.svg');
+}
+
+%hand-png {
+  // Available properties:
+  // prefix: ;
+  // width: 40;
+  // height: 47;
+  // filename: hand.png;
+  // basename: hand;
+  // dirname: img;
+  // ext: .png;
+  // path: hand.png;
+  // fullname: hand-png;
+  // mime: image/png;
+  // hash: be59c07d106d32e5af3c3685663bdb42;
+  background-image: image-url('hand.png');
 }
 
 %header_01-png {
@@ -606,8 +627,8 @@ $compass-imagehelper-imagesmap: (
 %kv-jpg {
   // Available properties:
   // prefix: ;
-  // width: 1440;
-  // height: 900;
+  // width: 1980;
+  // height: 680;
   // filename: kv.jpg;
   // basename: kv;
   // dirname: img;
@@ -615,7 +636,7 @@ $compass-imagehelper-imagesmap: (
   // path: kv.jpg;
   // fullname: kv-jpg;
   // mime: image/jpeg;
-  // hash: 8fa18c4f9f99e2877ea4b3e51eda8715;
+  // hash: 65aa905242a8615e1bd2984120169946;
   background-image: image-url('kv.jpg');
 }
 
@@ -663,7 +684,7 @@ $compass-imagehelper-imagesmap: (
   // path: m-1.jpg;
   // fullname: m-1-jpg;
   // mime: image/jpeg;
-  // hash: 4c0c2ad45ff067f5ad687c86af9de28a;
+  // hash: 6da0ac99df45c9119eb42982b0173388;
   background-image: image-url('m-1.jpg');
 }
 
@@ -761,22 +782,6 @@ $compass-imagehelper-imagesmap: (
   // mime: image/png;
   // hash: 4a37f8008959c75f619bf0a3a4e2d7a2;
   background-image: image-url('owl.video.play.png');
-}
-
-%pchome24-png {
-  // Available properties:
-  // prefix: ;
-  // width: 600;
-  // height: 47;
-  // filename: pchome24.png;
-  // basename: pchome24;
-  // dirname: img;
-  // ext: .png;
-  // path: pchome24.png;
-  // fullname: pchome24-png;
-  // mime: image/png;
-  // hash: 88c88dbc4497e748f27f18c9a0da5b70;
-  background-image: image-url('pchome24.png');
 }
 
 %play-solid-png {
@@ -955,6 +960,22 @@ $compass-imagehelper-imagesmap: (
   background-image: image-url('pro-9.jpg');
 }
 
+%QRCode-png {
+  // Available properties:
+  // prefix: ;
+  // width: 1110;
+  // height: 1110;
+  // filename: QRCode.png;
+  // basename: QRCode;
+  // dirname: img;
+  // ext: .png;
+  // path: QRCode.png;
+  // fullname: QRCode-png;
+  // mime: image/png;
+  // hash: 109566848a4d0675d8460a4b5c696f96;
+  background-image: image-url('QRCode.png');
+}
+
 %search-svg {
   // Available properties:
   // prefix: ;
@@ -1015,7 +1036,7 @@ $compass-imagehelper-imagesmap: (
   // path: t-1.jpg;
   // fullname: t-1-jpg;
   // mime: image/jpeg;
-  // hash: a6574e8f804447160343599d72182ea4;
+  // hash: 6b24b8666c3f804e785de5ddde8b0bc9;
   background-image: image-url('t-1.jpg');
 }
 
