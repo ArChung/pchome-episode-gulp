@@ -126,11 +126,6 @@
 $compass-imagehelper-path-prefix: '../img/';
 
 $compass-imagehelper-imagesmap: (
-  '123.png': (
-    width: '600',
-    height: '47',
-    hash: '35608015a7d4f9d42b3853cb14cc4b12'
-  ),
   '24HLOGO.png': (
     width: '960',
     height: '127',
@@ -256,6 +251,11 @@ $compass-imagehelper-imagesmap: (
     height: '80',
     hash: '4a37f8008959c75f619bf0a3a4e2d7a2'
   ),
+  'pchome.png': (
+    width: '600',
+    height: '47',
+    hash: '35608015a7d4f9d42b3853cb14cc4b12'
+  ),
   'play-solid.png': (
     width: '80',
     height: '91',
@@ -367,22 +367,6 @@ $compass-imagehelper-imagesmap: (
     hash: 'e66f4608c5a306234a44e74c0913739c'
   ),
 );
-
-%123-png {
-  // Available properties:
-  // prefix: ;
-  // width: 600;
-  // height: 47;
-  // filename: 123.png;
-  // basename: 123;
-  // dirname: img;
-  // ext: .png;
-  // path: 123.png;
-  // fullname: 123-png;
-  // mime: image/png;
-  // hash: 35608015a7d4f9d42b3853cb14cc4b12;
-  background-image: image-url('123.png');
-}
 
 %24HLOGO-png {
   // Available properties:
@@ -782,6 +766,22 @@ $compass-imagehelper-imagesmap: (
   // mime: image/png;
   // hash: 4a37f8008959c75f619bf0a3a4e2d7a2;
   background-image: image-url('owl.video.play.png');
+}
+
+%pchome-png {
+  // Available properties:
+  // prefix: ;
+  // width: 600;
+  // height: 47;
+  // filename: pchome.png;
+  // basename: pchome;
+  // dirname: img;
+  // ext: .png;
+  // path: pchome.png;
+  // fullname: pchome-png;
+  // mime: image/png;
+  // hash: 35608015a7d4f9d42b3853cb14cc4b12;
+  background-image: image-url('pchome.png');
 }
 
 %play-solid-png {
