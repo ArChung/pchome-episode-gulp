@@ -56,7 +56,8 @@ export function copy() {
       "!src/views/**/**",
       "!src/**/*.ejs",
       "!src/**/*.html",
-      "!src/css/**/**"
+      "!src/css/**/**",
+      "!src/conponents/**/**",
     ])
     .pipe(gulp.dest("./public"))
 }
